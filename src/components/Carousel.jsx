@@ -6,7 +6,7 @@ import banner3 from '../assets/banners/Banner3.png';
 import banner1 from '../assets/banners/Banner1.png';
 import banner4 from '../assets/banners/Banner4.png';
 import banner2 from '../assets/banners/Banner2.png';
-//import  WhatsAppButton  from './WhatsAppButton';
+import  WhatsAppButton  from './WhatsAppButton';
 import canon from '../assets/logos/canon.svg';
 import angelbird from '../assets/logos/angelbird.svg';
 import datavideo from '../assets/logos/datavideo.svg';
@@ -95,7 +95,7 @@ const MyCarousel = () => {
         </div>
       </div>
     </Carousel>
-    {/* <WhatsAppButton></WhatsAppButton> */}
+    <WhatsAppButton></WhatsAppButton>
     </>
 
   );

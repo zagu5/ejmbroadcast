@@ -1,0 +1,23 @@
+.whatsapp-button-container {
+    position: fixed;
+    bottom: 10px; 
+    left: 90%; 
+    transform: translateX(-50%); 
+    z-index: 2;
+  }
+  
+  /* Estilos para el botón de WhatsApp */
+  .whatsapp-button {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el icono de WhatsApp */
+  .fa-whatsapp {
+    font-size: 3.5em;
+    margin-right: 5px;
+  }
+  
