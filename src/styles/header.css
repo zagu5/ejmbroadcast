@@ -1,0 +1,128 @@
+/* Estilo para el menú de navegación */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 20px 10px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+.header.hidden {
+  display: none;
+}  
+
+
+/* Estilo para el logo */
+.header img {
+
+  height: 4em;
+  position:absolute;
+  display:flex; 
+  align-items: center; 
+  margin-right: 20px; 
+  top: 12px;
+  left:6em;
+}
+
+
+  /* Estilo para los elementos del menú */
+  .header ul {
+    font-family: 'Averta-Regular';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+  
+  .header li {
+    margin: 0 15px; 
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; 
+ 
+  }
+  
+  .header a:hover {
+    color: #ff6600; 
+  }
+
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* .projects-dropdown span {
+  cursor: pointer;
+} */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgb(0,0,0,1);
+  /* background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%); */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); 
+  border: 1px solid #555;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  list-style-type:none;
+  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  margin: 5px 10px;
+  font-size: 12px;
+  /* text-decoration:underline; */
+}
+
+/* estilos flecha arriba */
+
+/* En tu archivo de estilos header.css u otro archivo CSS */
+.scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background: transparent; 
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  /* box-shadow: inset 0 0 0 1px #e7e7e7; */
+  transition: all .2s linear;
+  transform: translateX(-50%);
+  z-index: 999;
+  border: none;
+}
+
+.scroll-to-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

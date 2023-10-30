@@ -1,5 +1,23 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+} */
+
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url(   '../src/assets/fonts/Averta-Regular.ttf') format('woff');
+}
+@font-face {
+  font-family: 'AvertaStd-Extrabold';
+  src: url(   '../src/assets/fonts/AvertaStd-ExtraBold.ttf')format('woff');
+}
+body{
+  background-color: #ffffff;
+  font-family: 'Averta-Regular','AvertaStd-Extrabold';
+  margin: 0;
+  /* margin: 2px -2px; */
+  padding: 0;
+
+
 }
