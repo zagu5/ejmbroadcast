@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import MyCarousel from '../components/Carousel'
 import ProjectSection from '../sections/ProjectSection'
+import ServiceSection from '../sections/ServiceSection'
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
        <Header/> 
        <MyCarousel/>
        <ProjectSection/>
+       <ServiceSection/>
     </>
 
   )
