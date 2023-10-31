@@ -3,6 +3,8 @@ import MyCarousel from '../components/Carousel'
 import ProjectSection from '../sections/ProjectSection'
 import ServiceSection from '../sections/ServiceSection'
 import EquipmentSection from '../sections/EquipmentSections'
+import AboutSection from '../sections/AboutSection'
+import Footer from '../components/Footer'
 
 const Homepage = () => {
   return (
@@ -12,6 +14,8 @@ const Homepage = () => {
        <ProjectSection/>
        <ServiceSection/>
        <EquipmentSection/>
+       <AboutSection/>
+       <Footer/>
     </>
 
   )

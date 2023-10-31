@@ -1,0 +1,94 @@
+/* footer.module.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  /* Compartido entre .contactInfo y .formSection */
+  .contactInfo,
+  .formSection {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .contactColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Estilo del formulario */
+  .formGroup {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 14px;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #777;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #e98f2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo de la sección de redes sociales */
+  .socialMedia {
+    margin-top: 3rem;
+  }
+  
+  .footerIcons {
+    text-align: center;
+  }
+  
+  .footerIcons a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .footerText {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .text1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text2 {
+    margin-bottom: 2rem;
+  }
