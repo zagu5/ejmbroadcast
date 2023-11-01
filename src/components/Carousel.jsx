@@ -2,6 +2,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import '../styles/carousel.css';
+import { Link } from 'react-router-dom';
 import banner3 from '../assets/banners/Banner3.png';
 import banner1 from '../assets/banners/Banner1.png';
 import banner4 from '../assets/banners/Banner4.png';
@@ -39,7 +40,8 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <h2>Bienvenido a <br/> EJM Broadcast</h2>
               <p>Un equipo de profesionales audiovisuales <br/>  que provee soluciones, asesoria y buenos<br/>precios para el mundo del Broadcast</p>
-              <button type='button' className='btn'>Conéctate con nosotros</button>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
+              {/* <button type='button' className='btn'>Conéctate con nosotros</button> */}
             </div>
           </div>
         </div>        

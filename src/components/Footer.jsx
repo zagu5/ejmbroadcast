@@ -53,7 +53,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
+    <footer id={"contact"} className={styles.footer}>
       <ContactInfo />
       <ContactForm />
       <span className={styles.footerText}>© {currentYear} Todos los derechos reservados Elefante Pink</span>

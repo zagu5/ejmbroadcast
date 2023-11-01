@@ -1,0 +1,88 @@
+/* ContactPage.module.css */
+
+/* Estilos para el formulario */
+main {
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
+}
+.h1{
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Averta', sans-serif;
+} 
+.formStyle {
+  max-width: 500px;
+  margin: 0 auto ;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #333;
+  text-align: left;
+  z-index: 2;
+}
+
+/* Estilos para los campos del formulario */
+form div {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items:flex-start
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+  background-color: #e98f2d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos específicos para los campos de selección de país y teléfono */
+select[name="country"],
+input[name="phoneNumber"] {
+  flex: 1;
+ /* Personaliza el ancho según tus necesidades */
+}
+
+/* Estilos para la fila que contiene los campos de país y teléfono */
+
+
+/* Estilos para campos requeridos */
+input[required],
+textarea[required] {
+  border-color: none; /* Cambia el color del borde para resaltar los campos requeridos */
+}
+
+  
