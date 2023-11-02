@@ -68,32 +68,32 @@ const Header = () => {
             {showProjects && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="project1" smooth={true} duration={1000}>
+                  <Link to="/projects/project1" smooth={true} duration={1000}>
                     Centro Familiar Cristiano
                   </Link>
                 </li>
                 <li>
-                  <Link to="project2" smooth={true} duration={1000}>
+                  <Link to="/projects/project2" smooth={true} duration={1000}>
                     90 Minutos
                   </Link>
                 </li>
                 <li>
-                  <Link to="project3" smooth={true} duration={1000}>
+                  <Link to="/projects/project3" smooth={true} duration={1000}>
                     El Lugar de su Presencia
                   </Link>
                 </li>
                 <li>
-                  <Link to="project4" smooth={true} duration={1000}>
+                  <Link to="/projects/project4" smooth={true} duration={1000}>
                     Mision carismática
                   </Link>
                 </li>
                 <li>
-                  <Link to="project5" smooth={true} duration={1000}>
+                  <Link to="/projects/project5" smooth={true} duration={1000}>
                     Comunidad Cristiana Agua Viva
                   </Link>
                 </li>
                 <li>
-                  <Link to="project6" smooth={true} duration={1000}>
+                  <Link to="/projects/project6" smooth={true} duration={1000}>
                     Revista Semana
                   </Link>
                 </li>

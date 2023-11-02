@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage />} />  
-        <Route errorElement={<errorElement/>}/> 
+        {/* <Route errorElement={<errorElement/>}/>  */}
         <Route path='/contact-form' element={<ContactPage />} />
-        <Route path='/projects' element={<ProjectPage />} />
+        <Route path="/projects/:projectId" element={<ProjectPage/>} />
       </Routes>  
       </BrowserRouter>
   )

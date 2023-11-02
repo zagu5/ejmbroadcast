@@ -1,16 +1,19 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import WhatsAppButton from "../components/WhatsAppButton";
+/*ProjectPage.jsx*/
+import { useParams } from 'react-router-dom';
+import ProjectDetail from '../components/ProjectDetail';
+import { projectData } from '../components/projectData'; // Importa tus datos de proyecto
 
 const ProjectPage = () => {
-  return (
-    <>
-        <Header/>
-        <Footer></Footer>
-        <WhatsAppButton></WhatsAppButton>
-    </>
+  const { projectId } = useParams();
 
-  )
-}
+  // Busca el proyecto correspondiente en tus datos
+  const project = projectData[projectId];
+
+  return (
+    <div>
+      <ProjectDetail projectData={project} />
+    </div>
+  );
+};
 
 export default ProjectPage;
