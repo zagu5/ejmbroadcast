@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { useEffect, useState } from 'react';
 import style from '../styles/ContactPage.module.css';
 import axios from "axios";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -117,6 +118,7 @@ useEffect(() => {
         </form>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 };

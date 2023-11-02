@@ -41,7 +41,6 @@ const MyCarousel = () => {
               <h2>Bienvenido a <br/> EJM Broadcast</h2>
               <p>Un equipo de profesionales audiovisuales <br/>  que provee soluciones, asesoria y buenos<br/>precios para el mundo del Broadcast</p>
               <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
-              {/* <button type='button' className='btn'>Conéctate con nosotros</button> */}
             </div>
           </div>
         </div>        
@@ -53,7 +52,7 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <p>Ofrecemos la última tecnología <br/> respaldada por nuestra</p>
               <h2>visión creativa <br/> y experiencia</h2>
-              <button type='button' className='btn'>Conéctate con nosotros</button>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>
@@ -65,7 +64,7 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <p >Integramos los sistemas de audio, video <br/> e iluminación para crear espacios <br/>atractivos que intensifiquen</p>
               <h2>la experiencia de <br/> su audiencia</h2>
-              <button type='button' className='btn'>Conéctate con nosotros</button>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>

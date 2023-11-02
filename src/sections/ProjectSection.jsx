@@ -6,6 +6,7 @@ import elp from '../assets/images/projects/elp.png';
 import mc from '../assets/images/projects/mc.png';
 import ccav from '../assets/images/projects/ccav.png';
 import revistasemana from '../assets/images/projects/revistasemana.png';
+import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
@@ -13,7 +14,7 @@ const Project = ({ image, title }) => (
     <div className="grid-item" style={{ backgroundImage: `url(${image})` }}>
         <div className='content'>
             <h2 className='title'>{title}</h2>
-            <button type="button" className="boton">Ver Proyecto</button>
+            <Link to='/projects'> <button type="button" className="boton">Ver Proyecto</button></Link>
         </div>
     </div>
 );

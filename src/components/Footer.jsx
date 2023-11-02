@@ -5,7 +5,7 @@ function ContactInfo() {
   return (
     <div className={styles.contactInfo}>
       <div className={styles.contactColumn}>
-        <h1>Comencemos <br/> a trabajar</h1>
+        <h1 className={styles.formTitle}>Comencemos <br/> a trabajar</h1>
         <p className={styles.text1}>Línea de asesoría y ventas</p>
         <p>Colombia: +57 602 620 52 95</p>
         <p>USA: +1 561 290 9267</p>
@@ -23,21 +23,25 @@ function ContactForm() {
     <div className={styles.formSection}>
       <form>
         <div className={styles.formGroup}>
-          <label htmlFor="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
+          <div className={styles.inlineInput}>
+            <div className={styles.formGroup}>
+              <label htmlFor="name">Nombre:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div className={styles.formGroup}>
+              <label htmlFor="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
       </form>
       <div className={styles.socialMedia}>
-        <p>Envíanos un mensaje o síguenos <br/> por redes sociales </p>
+        <p>Envíanos un mensaje o síguenos por redes sociales</p>
         <div className={styles.footerIcons}>
           <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
@@ -48,6 +52,7 @@ function ContactForm() {
     </div>
   );
 }
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

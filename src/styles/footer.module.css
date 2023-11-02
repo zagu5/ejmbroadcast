@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: #333;
     color: white;
     text-align: center;
@@ -18,6 +18,20 @@
     flex: 1;
     text-align: left;
     padding: 20px;
+    font-size: 20px;
+  }
+
+  .contactInfo {
+    margin-left: 50px;
+    padding: 10vh;
+
+  }
+
+  /* Estilo para el título del formulario */
+  .formTitle {
+    font-size: 30px;
+    font-family: 'AvertaStd-Bold', sans-serif;
+    margin-bottom: 20px;
   }
   
   .contactColumn {
@@ -30,14 +44,15 @@
   .formGroup {
     margin-bottom: 10px;
     display: inline-block;
+    flex: 1;
   }
   
   form input,
   form textarea {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     max-width: 200px;
-    padding: 10px;
+    padding: 20px;
     background-color: #ffffff;
     border: 1px solid #777;
     border-radius: 5px;
@@ -60,11 +75,12 @@
   
   /* Estilo de la sección de redes sociales */
   .socialMedia {
-    margin-top: 3rem;
+    margin-top: 20px;
   }
   
   .footerIcons {
-    text-align: center;
+    text-align: left;
+    margin-top: 20px;
   }
   
   .footerIcons a {
@@ -81,7 +97,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 10px;
   }
   
   .text1 {
@@ -92,3 +107,10 @@
   .text2 {
     margin-bottom: 2rem;
   }
+
+  /* Estilo para los campos "Nombre" y "E-mail" en la misma línea */
+.inlineInput {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
