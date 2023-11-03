@@ -2,38 +2,37 @@
 export const projectData = {
     'project1': {
       title: 'Centro Familiar Cristiano',
-      description: 'Descripción del Proyecto 1',
-      Image: 'cfc.png',
-
+      description: 'En una ciudad donde las condiciones son muy limitadas logramos trabajar en conjunto con un grupo de arquitectos e ingenieros para ',
+      image: '/public/Header_cfc.png',  
     },
     'project2': {
       title: '90 Minutos',
       description: 'Descripción del Proyecto 2',
-      Image: 'noventaminutos.png',
+      image: '/public/Header_90minutos.png',
 
     },
     'project3': {
       title: 'El Lugar de su Presencia',
       description: 'Descripción del Proyecto 3',
-      Image: 'elp.png',
+      image: '/public/Header_elp.png',
 
     },
     'project4': {
       title: 'Misión Carismática',
       description: 'Descripción del Proyecto 4',
-      Image: 'mc.png',
+      image: '/public/Header_mci.png',
 
     },
     'project5': {
       title: 'Comunidad Cristiana Agua Viva',
       description: 'Descripción del Proyecto 5',
-      Image: 'ccav.png',
+      image: '/public/Header_ccav.png',
 
     },
     'project6': {
       title: 'Revista Semana',
       description: 'Descripción del Proyecto 6',
-      Image: 'revistasemana.png',
+      image: '/public/Header_revistasemana.png',
 
     },
 

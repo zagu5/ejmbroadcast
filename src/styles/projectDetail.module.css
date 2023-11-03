@@ -1,0 +1,31 @@
+/* projectDetail.module.css */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .content img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 100%;
+    height: auto; /* La altura se ajustará automáticamente */
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10em;
+    left: 20%;
+
+  }
+  
+  .description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+    text-align: justify;
+  }
