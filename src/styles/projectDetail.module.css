@@ -18,10 +18,46 @@
     margin: 10px 0;
     color: #ffffff;
     position: absolute;
+    text-shadow: 2px 2px 4px rgba(48, 68, 29, 0.5);
     bottom: 10em;
     left: 20%;
-
+    /* padding-left: 10em; */
   }
+
+  /* Estilos para la fila y columnas */
+  .row {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas uniformemente */
+    margin: 20px 0; /* Espaciado entre filas */    
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .column {
+    flex: 1; /* Ocupa el espacio disponible de manera uniforme */
+    margin: 0 10px; /* Espaciado entre columnas */
+    border-right: 2px solid #005C9A; /* Línea divisoria a la derecha de cada columna */
+    padding-right: 10px; /* Espaciado a la derecha de la columna */
+  }
+
+  .column:last-child {
+    border-right: none; /* Elimina la línea divisoria de la última columna */
+  }
+
+  /* Estilos para las secciones "Locación," "Capacidad" y "Servicios" */
+  .location,
+  .capacity,
+  .services {
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px; /* Espacio entre las secciones */
+    color: #005C9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   
   .description {
     font-size: 16px;
@@ -29,3 +65,49 @@
     color: black;
     text-align: justify;
   }
+
+  /* styles.css */
+.alice-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alice-carousel .alice-carousel-stage-item {
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  width: 100%; /* Ajusta el ancho del elemento al 100% para que ocupen todo el carousel */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+.alice-carousel .alice-carousel-prev-btn,
+.alice-carousel .alice-carousel-next-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.alice-carousel .alice-carousel-prev-btn:hover,
+.alice-carousel .alice-carousel-next-btn:hover {
+  background-color: #0056b3;
+}
+
+.alice-carousel .alice-carousel-dots-item {
+  background-color: #ccc;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.alice-carousel .alice-carousel-dots-item.active {
+  background-color: #007BFF;
+}
