@@ -13,9 +13,11 @@
     grid-template-rows: 80vh;
     gap: 0px;
     margin-bottom: 10px;
+    align-items: stretch;
   }
   
   .grid-item {
+    height: 100%;
     text-align: left;
     color: white;
     display: flex;
