@@ -8,14 +8,15 @@ const Header = () => {
   const [language, setLanguage] = React.useState('es');
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
-  const [showProjects, setShowProjects] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage(language === 'es' ? 'en' : 'es');
   };
 
-  const toggleProjects = () => {
-    setShowProjects(!showProjects);
+ 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const scrollToTop = () => {
@@ -30,8 +31,7 @@ const Header = () => {
       const currentScrollPos = window.pageYOffset;
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
-  
-      // Muestra u oculta el botón de flecha en función del desplazamiento
+
       const scrollButton = document.querySelector('.scroll-to-top');
       if (scrollButton) {
         if (currentScrollPos > 100) {
@@ -61,12 +61,12 @@ const Header = () => {
             {language === 'es' ? 'Inicio' : 'Home'}
             </RouterLink>
           </li>
-          <li className="dropdown" onClick={toggleProjects}>
-            <ScrollLink to="projects" smooth={true} duration={1000}>
+          <li className="dropdown"  >
+            <ScrollLink to="projects" smooth={true} duration={1000} onClick={toggleDropdown}>
             {language === 'es' ? 'Proyectos' : 'Projects'}
             </ScrollLink>
-            {showProjects && (
-              <ul className="dropdown-menu">
+            {isDropdownOpen && (
+              <ul className="dropdown-menu open">
                 <li>
                   <RouterLink to="/projects/project1" >
                     Centro Familiar Cristiano
