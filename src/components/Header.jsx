@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import '../styles/header.css';
 import logo from '../assets/logo.svg';
 
@@ -62,70 +62,70 @@ const Header = () => {
             </RouterLink>
           </li>
           <li className="dropdown" onClick={toggleProjects}>
-            <Link to="projects" smooth={true} duration={1000}>
+            <ScrollLink to="projects" smooth={true} duration={1000}>
             {language === 'es' ? 'Proyectos' : 'Projects'}
             {/* <a href="#">{language === 'es' ? 'Proyectos' : 'Projects'}</a> */}
-            </Link>
+            </ScrollLink>
             {showProjects && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/projects/project1" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project1" smooth={true} duration={1000}>
                     Centro Familiar Cristiano
-                  </Link>
+                  </RouterLink>
                 </li>
                 <li>
-                  <Link to="/projects/project2" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project2" smooth={true} duration={1000}>
                     90 Minutos
-                  </Link>
+                  </RouterLink>
                 </li>
                 <li>
-                  <Link to="/projects/project3" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project3" smooth={true} duration={1000}>
                     El Lugar de su Presencia
-                  </Link>
+                  </RouterLink>
                 </li>
                 <li>
-                  <Link to="/projects/project4" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project4" smooth={true} duration={1000}>
                     Mision carismática
-                  </Link>
+                  </RouterLink>
                 </li>
                 <li>
-                  <Link to="/projects/project5" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project5" smooth={true} duration={1000}>
                     Comunidad Cristiana Agua Viva
-                  </Link>
+                  </RouterLink>
                 </li>
                 <li>
-                  <Link to="/projects/project6" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project6" smooth={true} duration={1000}>
                     Revista Semana
-                  </Link>
+                  </RouterLink>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <Link to="services" smooth={true} duration={1000}>
+            <ScrollLink to="services" smooth={true} duration={1000}>
             {language === 'es' ? 'Servicios' : 'Services'}
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to="equipment" smooth={true} duration={1000}>
+            <ScrollLink to="equipment" smooth={true} duration={1000}>
             {language === 'es' ? 'Equipos' : 'Equipment'}
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={1000}>
+            <ScrollLink to="about" smooth={true} duration={1000}>
             {language === 'es' ? 'Nosotros' : 'About'}
-            </Link>
+            </ScrollLink>
           </li>
 
           <li>
-            <Link to="contact" smooth={true} duration={1000}>
+            <ScrollLink to="contact" smooth={true} duration={1000}>
             {language === 'es' ? 'Contacto' : 'Contact'}
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to="news" smooth={true} duration={1000}>
+            <ScrollLink to="news" smooth={true} duration={1000}>
             {language === 'es' ? 'Noticias' : 'News'}
-            </Link>
+            </ScrollLink>
           </li>
           <button onClick={toggleLanguage}>
             {language === 'es' ? 'EN' : 'ES'}
