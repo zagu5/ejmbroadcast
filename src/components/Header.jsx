@@ -57,44 +57,43 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <RouterLink to="/" smooth={true} duration={1000}>
+            <RouterLink to="/">
             {language === 'es' ? 'Inicio' : 'Home'}
             </RouterLink>
           </li>
           <li className="dropdown" onClick={toggleProjects}>
             <ScrollLink to="projects" smooth={true} duration={1000}>
             {language === 'es' ? 'Proyectos' : 'Projects'}
-            {/* <a href="#">{language === 'es' ? 'Proyectos' : 'Projects'}</a> */}
             </ScrollLink>
             {showProjects && (
               <ul className="dropdown-menu">
                 <li>
-                  <RouterLink to="/projects/project1" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project1" >
                     Centro Familiar Cristiano
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects/project2" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project2" >
                     90 Minutos
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects/project3" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project3" >
                     El Lugar de su Presencia
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects/project4" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project4" >
                     Mision carismática
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects/project5" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project5" >
                     Comunidad Cristiana Agua Viva
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/projects/project6" smooth={true} duration={1000}>
+                  <RouterLink to="/projects/project6" >
                     Revista Semana
                   </RouterLink>
                 </li>
@@ -116,16 +115,15 @@ const Header = () => {
             {language === 'es' ? 'Nosotros' : 'About'}
             </ScrollLink>
           </li>
-
           <li>
             <ScrollLink to="contact" smooth={true} duration={1000}>
             {language === 'es' ? 'Contacto' : 'Contact'}
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="news" smooth={true} duration={1000}>
+            <RouterLink to="news">
             {language === 'es' ? 'Noticias' : 'News'}
-            </ScrollLink>
+            </RouterLink>
           </li>
           <button onClick={toggleLanguage}>
             {language === 'es' ? 'EN' : 'ES'}
