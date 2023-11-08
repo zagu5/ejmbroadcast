@@ -60,54 +60,35 @@
 
   
   .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 20px 100px;
     color: black;
     text-align: justify;
   }
 
-  /* styles.css */
-.alice-carousel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .mySlider {
+    gap: 0;
+    margin: 20px 40px;
+  }
 
-.alice-carousel .alice-carousel-stage-item {
-  border: 2px solid #007BFF;
-  border-radius: 8px;
-  margin: 0 10px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  width: 100%; /* Ajusta el ancho del elemento al 100% para que ocupen todo el carousel */
-  height: auto; /* Ajusta la altura automáticamente */
-}
+  .buton {
+    background: #e98f2d; 
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin: 20px 20px 0;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.alice-carousel .alice-carousel-prev-btn,
-.alice-carousel .alice-carousel-next-btn {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.alice-carousel .alice-carousel-prev-btn:hover,
-.alice-carousel .alice-carousel-next-btn:hover {
-  background-color: #0056b3;
-}
-
-.alice-carousel .alice-carousel-dots-item {
-  background-color: #ccc;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  border-radius: 50%;
-}
-
-.alice-carousel .alice-carousel-dots-item.active {
-  background-color: #007BFF;
-}
+  .buton:hover {
+    background: rgba(0, 0, 0, 0.7); 
+  }

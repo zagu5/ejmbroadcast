@@ -2,16 +2,16 @@
 export const projectData = {
     'project1': {
       title: 'Centro Familiar Cristiano',
-      description: 'En una ciudad donde las condiciones son muy limitadas logramos trabajar en conjunto con un grupo de arquitectos e ingenieros para ',
+      description: 'En una ciudad donde las condiciones son muy limitadas logramos trabajar en conjunto con un grupo de arquitectos e ingenieros para aterrizar un sueño:la construcción del Auditorio Emprendedores, el primer centro de convenciones de Sucre y uno de los templos con mayor prestigio gracias al diseño de su sistema de audio, video e iluminación. Diseño en el que participamos con asesoría, venta e implementación ',
       image: '/imagesHeaders/Header_cfc.png',  
       location: 'Sincelejo, Colombia',
       capacity: '2000 personas',
       services: 'Participación en la construcción del auditorio',
       carouselImages: [
-        '/carousel/Foto_mini_1.png',
-        '/carousel/Foto_mini_2.png',
-        '/carousel/Foto_mini_3.png',
-        '/carousel/Foto_mini_4.png',
+        {small: '/carousel/Foto_mini_1.png', large: '/carousel/Foto_Grande_1.png'},
+        {small:'/carousel/Foto_mini_2.png', large: '/carousel/Foto_Grande_2.png'},
+        {small:'/carousel/Foto_mini_3.png', large: '/carousel/Foto_Grande_3.png'},
+        {small:'/carousel/Foto_mini_4.png', large: '/carousel/Foto_Grande_4.png'},
       ]
     },
     'project2': {
@@ -21,6 +21,12 @@ export const projectData = {
       location: 'Cali, Colombia',
       capacity: '',
       services: 'Participación en la construcción del centro de transición del noticiero para la Universidad Autónoma de Occidente',
+      carouselImages: [
+        {small: '/carousel/small_1_90.png', large: '/carousel/large_1_90.png'},
+        {small:'/carousel/small_2_90.png', large: '/carousel/large_2_90.png'},
+        {small:'/carousel/small_3_90.png', large: '/carousel/large_3_90.png'},
+        {small:'/carousel/small_4_90.png', large: '/carousel/large_4_90.png'},
+      ]
     },
     'project3': {
       title: 'El Lugar de su Presencia',
@@ -29,6 +35,12 @@ export const projectData = {
       location: 'Bogotá, Colombia',
       capacity: '2000 personas',
       services: 'Suministro de equipos de video, audio e iluminación',
+      carouselImages: [
+        {small: '/carousel/small_1_90.png', large: '/carousel/large_1_90.png'},
+        {small:'/carousel/small_2_90.png', large: '/carousel/large_2_90.png'},
+        {small:'/carousel/small_3_90.png', large: '/carousel/large_3_90.png'},
+        {small:'/carousel/small_4_90.png', large: '/carousel/large_4_90.png'},
+      ]
     },
     'project4': {
       title: 'Misión Carismática',
@@ -37,6 +49,12 @@ export const projectData = {
       location: 'Bogotá, Colombia',
       capacity: '',
       services: 'Suministro de equipos de video, audio e iluminación',
+      carouselImages: [
+        {small: '/carousel/small_1_90.png', large: '/carousel/large_1_90.png'},
+        {small:'/carousel/small_2_90.png', large: '/carousel/large_2_90.png'},
+        {small:'/carousel/small_3_90.png', large: '/carousel/large_3_90.png'},
+        {small:'/carousel/small_4_90.png', large: '/carousel/large_4_90.png'},
+      ]
     },
     'project5': {
       title: 'Comunidad Cristiana Agua Viva',
@@ -45,6 +63,12 @@ export const projectData = {
       location: 'Lima, Perú',
       capacity: '',
       services: 'Suministro de equipos de video, audio e iluminación',
+      carouselImages: [
+        {small: '/carousel/small_1_90.png', large: '/carousel/large_1_90.png'},
+        {small:'/carousel/small_2_90.png', large: '/carousel/large_2_90.png'},
+        {small:'/carousel/small_3_90.png', large: '/carousel/large_3_90.png'},
+        {small:'/carousel/small_4_90.png', large: '/carousel/large_4_90.png'},
+      ]
 
     },
     'project6': {
@@ -54,7 +78,12 @@ export const projectData = {
       location: 'Colombia',
       capacity: '',
       services: 'Dotación e implementación del sistema audiovisual para su propuesta virtual informativa ',
-
+      carouselImages: [
+        {small: '/carousel/small_1_90.png', large: '/carousel/large_1_90.png'},
+        {small:'/carousel/small_2_90.png', large: '/carousel/large_2_90.png'},
+        {small:'/carousel/small_3_90.png', large: '/carousel/large_3_90.png'},
+        {small:'/carousel/small_4_90.png', large: '/carousel/large_4_90.png'},
+      ]
     },
 
   };

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import '../styles/header.css';
 import logo from '../assets/logo.svg';
@@ -56,9 +57,9 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link to="home" smooth={true} duration={1000}>
+            <RouterLink to="/" smooth={true} duration={1000}>
             {language === 'es' ? 'Inicio' : 'Home'}
-            </Link>
+            </RouterLink>
           </li>
           <li className="dropdown" onClick={toggleProjects}>
             <Link to="projects" smooth={true} duration={1000}>

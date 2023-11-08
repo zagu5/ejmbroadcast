@@ -3,12 +3,29 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer';
 import style from '../styles/projectDetail.module.css';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import ModalImage from 'react-modal-image';
+import WhatsAppButton from "../components/WhatsAppButton";
+
 
 const ProjectDetail = ({ projectData }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll:4,
+  };
+
   const carouselItems = projectData.carouselImages.map((image, index) => (
-    <img key={index} src={image} alt={`Carousel Image ${index}`} />
+    <ModalImage 
+      key={index}
+      small={image.small}
+      large={image.large}
+      alt={`Carousel Image ${index}`} 
+     />
   ));
 
   return (
@@ -39,17 +56,10 @@ const ProjectDetail = ({ projectData }) => {
         </div>
         <p className={style.description}>{projectData.description}</p>
         </div>
-        <AliceCarousel 
-          items={carouselItems}
-          responsive={{
-          0: { items: 1 },
-          768: { items: 2 },
-          1024: { items: 3 },
-          }}
-          autoPlay
-          autoPlayInterval={3000}
-        />
+        <Slider {...settings} className={style.mySlider}>{carouselItems}</Slider>
+        <button type='button' className={style.buton}>Estoy interesado</button>
         <Footer/>
+        <WhatsAppButton />
     </>
 
   );
@@ -63,7 +73,12 @@ ProjectDetail.propTypes = {
     location: PropTypes.string,
     capacity: PropTypes.string,
     services: PropTypes.string,
-    carouselImages: PropTypes.arrayOf(PropTypes.string),
+    carouselImages: PropTypes.arrayOf(
+      PropTypes.shape({
+        small: PropTypes.string,
+        large: PropTypes.string,
+      })
+    ),
   }).isRequired,
 };
 
