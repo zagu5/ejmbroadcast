@@ -11,24 +11,24 @@ const servicesData = [
   {
     bgColor: "#a9a9a9",
     title: "ASESORIA EN DISEÑO Y CONSTRUCCIÓN",
-    path: "/asesoria",
+    serviceId: "/asesoria",
   },
   {
     bgColor: "#666666",
     title: "VENTA DE EQUIPOS BROADCAST",
-    path: "/venta",
+    serviceId: "/venta",
   },
   {
     bgColor: "#a9a9a9",
     title: "TALLERES Y SEMINARIOS",
-    path: "/talleres",
+    serviceId: "/talleres",
   },
 ];
 
 import PropTypes from 'prop-types';
 
-const Service = ({ bgColor, title, subtitle, path }) => (
-  <Link to={path} style={{ textDecoration: 'none', color: 'inherit' }}> 
+const Service = ({ bgColor, title, subtitle, serviceId }) => (
+  <Link to={`services${serviceId}`} style={{ textDecoration: 'none', color: 'inherit' }}> 
     <div className={styles['grid-item']} style={{ backgroundColor: bgColor }}>
         <h1 className={styles.title}>{title}</h1>
         {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
@@ -40,7 +40,7 @@ Service.propTypes = {
     bgColor: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
-    path: PropTypes.string,
+    serviceId: PropTypes.string,
 };
 
 const ServiceSection = () => {

@@ -28,7 +28,7 @@ const ProjectDetail = ({ projectData }) => {
      />
   ));
 
-  return (
+  return ( 
     <>
         <Header/>
         <div className={style.content}>

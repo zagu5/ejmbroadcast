@@ -13,7 +13,7 @@ export const projectData = {
         {small:'/carousel/Foto_mini_3.png', large: '/carousel/Foto_Grande_3.png'},
         {small:'/carousel/Foto_mini_4.png', large: '/carousel/Foto_Grande_4.png'},
       ]
-    },
+    }, 
     'project2': {
       title: '90 Minutos',
       description: 'Descripción del Proyecto 2',
