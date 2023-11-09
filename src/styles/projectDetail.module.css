@@ -42,6 +42,7 @@
 
   .column:last-child {
     border-right: none; /* Elimina la línea divisoria de la última columna */
+    flex: 2; /* La última columna ocupa el doble de espacio */
   }
 
   /* Estilos para las secciones "Locación," "Capacidad" y "Servicios" */
