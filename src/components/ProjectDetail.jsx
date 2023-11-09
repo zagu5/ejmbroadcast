@@ -8,9 +8,17 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ModalImage from 'react-modal-image';
 import WhatsAppButton from "../components/WhatsAppButton";
-
+import React from 'react';
 
 const ProjectDetail = ({ projectData }) => {
+  const TextWithBreaks = ({text}) => {
+    return text.split('\n').map((str, index) => (
+      <React.Fragment key={index}>
+        {str}
+        <br/>
+      </React.Fragment>
+    ));
+  }
   const settings = {
     dots: true,
     infinite: true,
@@ -54,7 +62,7 @@ const ProjectDetail = ({ projectData }) => {
             </div>
           </div>
         </div>
-        <p className={style.description}>{projectData.description}</p>
+        <p className={style.description}><TextWithBreaks text={projectData.description} /></p>
         </div>
         <Slider {...settings} className={style.mySlider}>{carouselItems}</Slider>
         <button type='button' className={style.buton}>Estoy interesado</button>
