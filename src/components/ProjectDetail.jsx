@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import ModalImage from 'react-modal-image';
 import WhatsAppButton from "../components/WhatsAppButton";
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectDetail = ({ projectData }) => {
   const TextWithBreaks = ({text}) => {
@@ -65,7 +66,7 @@ const ProjectDetail = ({ projectData }) => {
         <p className={style.description}><TextWithBreaks text={projectData.description} /></p>
         </div>
         <Slider {...settings} className={style.mySlider}>{carouselItems}</Slider>
-        <button type='button' className={style.buton}>Estoy interesado</button>
+        <Link to='/contact-form' style={{textDecoration: 'none'}}><button  type='button' className={style.buton}>Estoy interesado</button></Link>
         <Footer/>
         <WhatsAppButton />
     </>
