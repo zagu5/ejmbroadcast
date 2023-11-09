@@ -51,7 +51,9 @@ const ServiceSection = () => {
           <Service key={index} {...service} />
         ))}
       </div>
+      <Link to="/contact-form" style={{ textDecoration: 'none', color: 'inherit' }}>
       <button type="button" className={styles.boton}>Quiero recibir asesoría</button>
+      </Link>
     </section>
   );
 };
