@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage'
 import ContactPage from './pages/ContactPage'
 import ProjectPage from './pages/ProjectPage'
 import ServicePage from './pages/ServicePage'
+import EquipmentPage from './pages/EquipmentPage'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/contact-form' element={<ContactPage />} />
         <Route path="/projects/:projectId" element={<ProjectPage/>} />
         <Route path="/services/:id" element={<ServicePage/>}/>
+        <Route path="/equipment/:type" element={<EquipmentPage/>}></Route>
       </Routes>  
       </BrowserRouter>
   )
