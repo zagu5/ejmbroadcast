@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Homepage />} />  
+        <Route path='/ejmbroadcast' element={<Homepage />} />  
         {/* <Route errorElement={<errorElement/>}/>  */}
         <Route path='/contact-form' element={<ContactPage />} />
         <Route path="/projects/:projectId" element={<ProjectPage/>} />
