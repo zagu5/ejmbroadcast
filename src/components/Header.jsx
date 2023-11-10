@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/header.css';
 import logo from '../assets/logo.svg';
 
@@ -26,6 +27,14 @@ const Header = () => {
     });
   };
   
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -101,24 +110,44 @@ const Header = () => {
             )}
           </li>
           <li>
-            <ScrollLink to="services" smooth={true} duration={1000}>
-            {language === 'es' ? 'Servicios' : 'Services'}
-            </ScrollLink>
+            <Link 
+              to="/" 
+              onClick={() => setTimeout(() => {
+                document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+              }, 0)}
+            >
+              {language === 'es' ? 'Servicios' : 'Services'}
+            </Link>
           </li>
           <li>
-            <ScrollLink to="equipment" smooth={true} duration={1000}>
+          <Link 
+            to="/" 
+            onClick={() => setTimeout(() => {
+              document.getElementById("equipment").scrollIntoView({ behavior: "smooth" });
+            }, 0)}
+          >
             {language === 'es' ? 'Equipos' : 'Equipment'}
-            </ScrollLink>
+          </Link>
           </li>
           <li>
-            <ScrollLink to="about" smooth={true} duration={1000}>
+          <Link 
+            to="/" 
+            onClick={() => setTimeout(() => {
+              document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+            }, 0)}
+          >
             {language === 'es' ? 'Nosotros' : 'About'}
-            </ScrollLink>
+          </Link>
           </li>
           <li>
-            <ScrollLink to="contact" smooth={true} duration={1000}>
+          <Link 
+            to="/" 
+            onClick={() => setTimeout(() => {
+              document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+            }, 0)}
+          >
             {language === 'es' ? 'Contacto' : 'Contact'}
-            </ScrollLink>
+          </Link>
           </li>
           <li>
             <RouterLink to="news">

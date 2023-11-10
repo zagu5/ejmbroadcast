@@ -11,8 +11,7 @@
     position: relative;
     min-height: 100vh;
   }
-  
-  /* Compartido entre .contactInfo y .formSection */
+
   .contactInfo,
   .formSection {
     flex: 1;
@@ -27,7 +26,6 @@
 
   }
 
-  /* Estilo para el título del formulario */
   .formTitle {
     font-size: 30px;
     font-family: 'AvertaStd-Bold', sans-serif;
@@ -39,8 +37,7 @@
     flex-direction: column;
     gap: 10px;
   }
-  
-  /* Estilo del formulario */
+
   .formGroup {
     margin-bottom: 10px;
     display: inline-block;
@@ -72,8 +69,7 @@
   form button:hover {
     background-color: #0056b3;
   }
-  
-  /* Estilo de la sección de redes sociales */
+
   .socialMedia {
     margin-top: 20px;
   }
@@ -108,7 +104,6 @@
     margin-bottom: 2rem;
   }
 
-  /* Estilo para los campos "Nombre" y "E-mail" en la misma línea */
 .inlineInput {
   display: flex;
   flex-wrap: wrap;

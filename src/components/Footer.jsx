@@ -1,5 +1,4 @@
 import styles from '../styles/footer.module.css';
-
 // Componente para la información de contacto
 function ContactInfo() {
   return (

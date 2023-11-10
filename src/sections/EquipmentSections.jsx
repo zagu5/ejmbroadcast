@@ -1,6 +1,6 @@
 import styles from '../styles/equipment.module.css';
 import videocamara from '../assets/images/equipment/videocamara.svg';
-import tripode from '../assets/images/equipment/tripode.svg';
+import tripode from '../assets/images/equipment/tripodecolor.svg';
 import audio from '../assets/images/equipment/audio.svg';
 import software from '../assets/images/equipment/software.svg';
 import { Link } from 'react-router-dom';
@@ -43,7 +43,9 @@ const EquipmentSection = () => {
           </div>
         </div>
         <p className={styles.text2}>Impulsamos su mensaje, analizando las necesidades de su proyecto y seleccionando soluciones innovadoras entre <br/>los fabricantes más prestigiosos en todo el mundo.</p>
+        <Link to="/contact-form" style={{ textDecoration: 'none', color: 'inherit' }}>
         <button type="button" className={styles.boton}>Estoy interesado</button>
+        </Link>
       </section>
     </>
   );

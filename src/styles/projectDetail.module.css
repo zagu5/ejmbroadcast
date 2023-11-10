@@ -8,9 +8,9 @@
   }
 
   .content img {
-    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    width: 100%; 
     max-width: 100%;
-    height: auto; /* La altura se ajustará automáticamente */
+    height: auto; 
   }
   
   .title {
@@ -21,28 +21,27 @@
     text-shadow: 2px 2px 4px rgba(48, 68, 29, 0.5);
     bottom: 10em;
     left: 20%;
-    /* padding-left: 10em; */
   }
 
   /* Estilos para la fila y columnas */
   .row {
     display: flex;
-    justify-content: space-between; /* Distribuye las columnas uniformemente */
-    margin: 20px 0; /* Espaciado entre filas */    
+    justify-content: space-between; 
+    margin: 20px 0;  
     max-width: 600px;
     margin: 20px auto;
   }
 
   .column {
-    flex: 1; /* Ocupa el espacio disponible de manera uniforme */
-    margin: 0 10px; /* Espaciado entre columnas */
-    border-right: 2px solid #005C9A; /* Línea divisoria a la derecha de cada columna */
-    padding-right: 10px; /* Espaciado a la derecha de la columna */
+    flex: 1; 
+    margin: 0 10px; 
+    border-right: 2px solid #005C9A; 
+    padding-right: 10px; 
   }
 
   .column:last-child {
-    border-right: none; /* Elimina la línea divisoria de la última columna */
-    flex: 2; /* La última columna ocupa el doble de espacio */
+    border-right: none; 
+    flex: 2; 
   }
 
   /* Estilos para las secciones "Locación," "Capacidad" y "Servicios" */
@@ -51,7 +50,7 @@
   .services {
     padding: 10px;
     text-align: left;
-    margin-top: 20px; /* Espacio entre las secciones */
+    margin-top: 20px; 
     color: #005C9A;
     font-size: 20px;
     font-style: normal;

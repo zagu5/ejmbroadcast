@@ -55,12 +55,12 @@
   }
 
   .brandsgrid .brandImage {
-    width: 50%; /* Ajusta este valor según tus necesidades */
+    width: 50%; 
     height: auto;
   }
   
   .brandsgrid .minicon {
-    width: 30%; /* Ajusta este valor según tus necesidades */
+    width: 30%; 
     height: auto;
   }
   

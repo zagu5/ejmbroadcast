@@ -29,7 +29,6 @@ import style from '../styles/EquipmentPage.module.css';
                     <div key={index} className={style.brandContainer}>
                         <img className={style.brandImage} src={brand.image} alt={brand.name} />
                         <img className={style.minicon} src={brand.minicon} alt="minivideo" />
-                        {/* <p>{brand.name}</p> */}
                     </div>
                 )
                 )}

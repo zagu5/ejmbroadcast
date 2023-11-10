@@ -5,8 +5,6 @@ import { projectData } from '../components/projectData'; // Importa tus datos de
 
 const ProjectPage = () => {
   const { projectId } = useParams();
-
-  // Busca el proyecto correspondiente en tus datos
   const project = projectData[projectId];
 
   return (

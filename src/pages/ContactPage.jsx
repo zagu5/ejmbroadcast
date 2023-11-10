@@ -26,16 +26,9 @@ const [countries, setCountries] = useState([]);
 useEffect(() => {
     axios.get('https://restcountries.com/v3.1/all')
         .then((response) => {
-            // Procesar los datos de respuesta
             const countriesData = response.data;
-
-            // Extraer los códigos de país (indicativos) de los datos
             const countryCodes = countriesData.map(country => country.ccn3);
-
             console.log(countryCodes);
-
-            // Actualizar el estado con los datos de los países
-            //setCountries(countriesData);
         })
         .catch((error) => {
             console.error('Error fetching country data:', error);
@@ -57,7 +50,6 @@ useEffect(() => {
     console.log(formData);
   };
 
-  // Definir los campos del formulario en un array
   const formFields = [
     { label: 'Nombre*', type: 'text', name: 'name' },
     { label: 'Pais*', type: 'select', name: 'country', options: countries },

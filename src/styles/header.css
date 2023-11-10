@@ -1,4 +1,6 @@
-/* Estilo para el menú de navegación */
+/* #content-container {
+  padding-bottom: 100vh; 
+} */
 .header {
     background-color: rgba(0, 0, 0, 0.5); 
     color: #fff; 
@@ -13,7 +15,6 @@
 .header.hidden {
   display: none;
 }  
-
 
 /* Estilo para el logo */
 .header img {

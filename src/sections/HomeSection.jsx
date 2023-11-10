@@ -1,11 +1,7 @@
-
-
 const HomeSection = () => {
     return (
         <section id={"home"}>
-
         </section>
-
     )
 }
 
