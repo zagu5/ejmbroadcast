@@ -14,7 +14,7 @@ const Project = ({ image, title, projectId }) => (
     <div className="grid-item" style={{ backgroundImage: `url(${image})` }}>
         <div className='content'>
             <h2 className='title'>{title}</h2>
-            <Link to={`/projects/${projectId}`}> <button type="button" className="boton">Ver Proyecto</button></Link>
+            <Link to={`projects/${projectId}`}> <button type="button" className="boton">Ver Proyecto</button></Link>
         </div>
     </div>
 );
