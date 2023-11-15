@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer';
 import style from '../styles/projectDetail.module.css';
+import { useScrollToTop } from './useScrollToTop';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -11,7 +12,10 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const ProjectDetail = ({ projectData }) => {
+  useScrollToTop();
+
   const TextWithBreaks = ({text}) => {
     return text.split('\n').map((str, index) => (
       <React.Fragment key={index}>
@@ -33,7 +37,6 @@ const ProjectDetail = ({ projectData }) => {
       key={index}
       small={image.small}
       large={image.large}
-      alt={`Carousel Image ${index}`} 
      />
   ));
 
@@ -65,7 +68,7 @@ const ProjectDetail = ({ projectData }) => {
         </div>
         <p className={style.description}><TextWithBreaks text={projectData.description} /></p>
         </div>
-        <Slider {...settings} className={style.mySlider}>{carouselItems}</Slider>
+        <Slider {...settings} className={style.card}>{carouselItems}</Slider>
         <Link to='/contact-form' style={{textDecoration: 'none'}}><button  type='button' className={style.buton}>Estoy interesado</button></Link>
         <Footer/>
         <WhatsAppButton />

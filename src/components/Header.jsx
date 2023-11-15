@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link, useLocation } from 'react-router-dom';
+import { useScrollToTop } from './useScrollToTop';
 import '../styles/header.css';
 import logo from '../assets/logo.svg';
 
 const Header = () => {
+  useScrollToTop();
   const [language, setLanguage] = React.useState('es');
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
@@ -149,11 +151,11 @@ const Header = () => {
             {language === 'es' ? 'Contacto' : 'Contact'}
           </Link>
           </li>
-          <li>
+          {/* <li>
             <RouterLink to="news">
             {language === 'es' ? 'Noticias' : 'News'}
             </RouterLink>
-          </li>
+          </li> */}
           <button onClick={toggleLanguage}>
             {language === 'es' ? 'EN' : 'ES'}
           </button>

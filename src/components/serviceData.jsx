@@ -1,9 +1,11 @@
+import headerservice from '../assets/images/services/Header_servicios.png';
+import foto from '../assets/images/services/Foto.png';
 
 export const serviceData =  {
     'asesoria': {
         id:'1',
         title: 'ASESORIA EN DISEÑO Y CONSTRUCCIÓN',
-        image: '/imagesHeaders/Header_servicios.png',
+        image: headerservice,
         information: [
             {
                 title: 'LO ACOMPAÑAMOS EN TODAS \n'+
@@ -16,7 +18,7 @@ export const serviceData =  {
                           'gran experiencia brindando soluciones en proyectos destacados ' +
                           'nacional e internacionalmente. ',
                 paragraph: 'Somos el camino más seguro para hacer sus sueños realidad.',
-                image:'/Foto.png'
+                image: foto
             }
         ]
     },
@@ -24,7 +26,7 @@ export const serviceData =  {
     'venta': {
         id:'2',
         title: 'VENTA DE EQUIPOS DE BROADCAST',
-        image: '/imagesHeaders/Header_servicios.png',
+        image: headerservice,
         information: [
             {
                 title: 'RECIBA LOS MEJORES \n'+
@@ -35,7 +37,7 @@ export const serviceData =  {
                           'video y proyección. Gracias a la relación que por años hemos ' +
                           'construido con las grandes maras del mundo del Broadcast.',
                 paragraph: ' ',
-                image:'/Foto.png'
+                image: foto
             }
         ]
     },
@@ -43,7 +45,7 @@ export const serviceData =  {
     'talleres': {
         id:'2',
         title: 'TALLERES Y SEMINARIOS',
-        image: '/imagesHeaders/Header_servicios.png',
+        image: headerservice,
         information: [
             {
                 title: 'SOMOS UNA FUENTE  \n'+
@@ -53,7 +55,7 @@ export const serviceData =  {
                           'video y proyección de acuerdo a los parámetros científicos ' +
                           'desarrollados por nuestra compañia en diferentes experiencias.',
                 paragraph: ' ',
-                image:'/Foto.png'
+                image: foto
             }
         ]
     }

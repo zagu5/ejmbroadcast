@@ -1,11 +1,14 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import Header from "./Header"
 import Footer from "./Footer"
 import WhatsAppButton from "./WhatsAppButton"
 import style from "../styles/serviceDetail.module.css"
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { useScrollToTop } from './useScrollToTop';
 
 export const ServiceDetail = ({serviceData}) => {
+  useScrollToTop();
   const TextWithBreaks = ({text}) => {
     return text.split('\n').map((str, index) => (
       <React.Fragment key={index}>
@@ -33,7 +36,7 @@ export const ServiceDetail = ({serviceData}) => {
 
           </div>
         ))}
-        <button className={style.button}>Cotiza tu proyecto</button>
+        <Link to='/contact-form' style={{textDecoration: 'none'}}><button  type='button' className={style.button}>Cotiza tu proyecto</button></Link>
         </div>
         <Footer/>
         <WhatsAppButton/>

@@ -1,18 +1,23 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    margin-left: 80px;
-    margin-right: 80px;
+
     margin-bottom: 20px;
     background-color: #EAEAEA;
   }
 
-  .imageContainer{
+  .imageContainer {
     position: relative;
+    width: 100%; /* Asegura que el contenedor de la imagen no sea más grande que su contenedor padre */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor de la imagen */
   }
-
+  
+  .imageContainer img {
+    max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+  }
   .titleIcon{
     position: absolute;
     top: 50%;
@@ -24,20 +29,25 @@
     gap: 10px;
   }
 
+  .titleIcon img{
+    width: 8rem;
+    height: 8rem;
+  }
+
   .text p {
-    font-size: 39px;
+    font-size: 35px;
     color: #05526D;
-    text-align: center;
+    text-align: keft;
     margin-bottom: 20px;
-    text-align: left;
     margin-top: 20px;
+    font-family: 'avertaStd-ExtraBold';
   }
 
   .brandsgrid {
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
+    gap: 20px;
   }
   
   .brandsgrid div {
@@ -47,32 +57,40 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    padding: 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   }
   
-  .brandContainer {
-    position: relative;
-  }
+  /* .brandsgrid div img {
+    width: 100%;
+    height: auto;
+  } */
+  
+  /* .brandsgrid div .card-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  } */
 
-  .brandsgrid .brandImage {
-    width: 50%; 
+  .card-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+  }
+  
+  .card-body .main-image {
+    max-width: 100%;
     height: auto;
   }
   
-  .brandsgrid .minicon {
-    width: 30%; 
-    height: auto;
-  }
-  
-  .brand.minicon {
+  .card-body .minicon {
     position: absolute;
     bottom: 0;
     right: 0;
-
-  }
-  
-  
-
-  .brandImage, .minicon {
-    width: 50% !important; /* Ajusta este valor según tus necesidades */
+    width: 20px; /* Ajusta este valor según tus necesidades */
+    height: auto;
   }

@@ -33,15 +33,18 @@
   }
 
   .column {
-    flex: 1; 
+    /* flex: 1;  */
     margin: 0 10px; 
     border-right: 2px solid #005C9A; 
-    padding-right: 10px; 
+    /* padding-right: 10px;  */
+  }
+
+  .column.services {
+    flex: 3; 
   }
 
   .column:last-child {
     border-right: none; 
-    flex: 2; 
   }
 
   /* Estilos para las secciones "Locación," "Capacidad" y "Servicios" */
@@ -55,7 +58,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   
@@ -64,11 +67,13 @@
     margin: 20px 100px;
     color: black;
     text-align: justify;
+    line-height: 1.5;
   }
 
-  .mySlider {
+  .card {
     gap: 0;
     margin: 20px 40px;
+    /* padding: 3rem; */
   }
 
   .buton {
@@ -84,6 +89,7 @@
     margin-right: auto;
     font-size: 20px;
     text-decoration: none;
+    border: none;
   }
 
   .buton:hover {
