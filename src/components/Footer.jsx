@@ -42,10 +42,10 @@ function ContactForm() {
       <div className={styles.socialMedia}>
         <p>Envíanos un mensaje o síguenos por redes sociales</p>
         <div className={styles.footerIcons}>
-          <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
-          <a href="https://www.youtube.com/"><i className="fab fa-youtube"></i></a>
+          <a href="https://m.facebook.com/EjmBroadcast" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/ejm_broadcast/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+          <a href="https://x.com/ejmbroadcast" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
