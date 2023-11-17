@@ -4,7 +4,7 @@ import '../styles/whatsapp.css'
 
 
 const WhatsAppButton = () => {
-  const phoneNumber = '123456789'; // Reemplazar numero de whatsapp a contactar
+  const phoneNumber = '573118603977'; // Reemplazar numero de whatsapp a contactar
 
   const handleWhatsAppClick = () => {
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
@@ -15,7 +15,7 @@ const WhatsAppButton = () => {
     <>
     <div className="whatsapp-button-container">
         <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#1CB271' }} />
+        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} />
         </button>
     </div>
 

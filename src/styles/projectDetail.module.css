@@ -14,11 +14,11 @@
   }
   
   .title {
-    font-size: 30px;
+    font-size: 28px;
     margin: 10px 0;
     color: #ffffff;
     position: absolute;
-    text-shadow: 2px 2px 4px rgba(48, 68, 29, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
     bottom: 10em;
     left: 20%;
   }

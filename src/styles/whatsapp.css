@@ -10,14 +10,13 @@
   .whatsapp-button {
     background: transparent;
     border: none;
-    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
   }
   
   /* Estilos para el icono de WhatsApp */
   .fa-whatsapp {
-    font-size: 6em;
+    font-size: 5em;
     margin-right: 5px;
   }
   

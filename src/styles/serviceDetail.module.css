@@ -19,7 +19,7 @@
         margin: auto;
         color: #ffffff;
         position: absolute;
-        text-shadow: 2px 2px 4px rgba(48, 68, 29, 0.5);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
         left: 0;
         right: 0;
         text-align: center;
@@ -34,7 +34,7 @@
         justify-content: space-between;
         margin: 20px auto;
         max-width: 90%;
-
+        
       }
       
       .textSection {
