@@ -15,7 +15,7 @@ const WhatsAppButton = () => {
     <>
     <div className="whatsapp-button-container">
         <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25d366' }} />
+        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#1CB271' }} />
         </button>
     </div>
 

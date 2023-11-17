@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import style from '../styles/AboutPage.module.css'
 import banner from '../assets/images/about/Banner_1.png'
+import Footer from '../components/Footer'
 
 const AboutPage = () => {
   return (
@@ -19,8 +20,9 @@ const AboutPage = () => {
                     <p className={style.text}>Nacimos en el corazón de la ciudad de entretenimiento más importante del mundo: Orlando; donde se explotan al máximo todos los recursos del vídeo, audio y proyección y se asumen  nuevos retos para seguir siendo reconocida como la ciudad donde todos los sueños se hacen realidad. </p>
                 </div>
             </div>
-            <img className={style.imagecontainer} src={banner} alt="" />
+            <img className={style.imagecontainer} src={banner} alt="banner" />
         </div>
+        <Footer/>
     </>
   )
 }
