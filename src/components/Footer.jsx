@@ -1,4 +1,6 @@
 import styles from '../styles/footer.module.css';
+import { useForm } from "react-hook-form";
+
 // Componente para la información de contacto
 function ContactInfo() {
   return (
@@ -10,7 +12,7 @@ function ContactInfo() {
         <p>USA: +1 561 290 9267</p>
         <p className={styles.text2}>Whatsapp: +57 311 860 39 77</p>
         <p>Correo electrónico:</p>
-        <p><a href="mailto:info@ejmbroadcast.com">info@ejmbroadcast.com</a></p>
+        <p><a style={{color:'#e98f2d'}} href="mailto:info@ejmbroadcast.com">info@ejmbroadcast.com </a></p>
       </div>
     </div>
   );
@@ -18,26 +20,45 @@ function ContactInfo() {
 
 // Componente para el formulario de contacto
 function ContactForm() {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
   return (
-    <div className={styles.formSection}>
-      <form>
-        <div className={styles.formGroup}>
-          <div className={styles.inlineInput}>
-            <div className={styles.formGroup}>
-              <label htmlFor="name">Nombre:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="email">E-mail:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+    <div className={styles.contactForm}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className={styles.inputRow}>
+          <div>
+          <label>Nombre</label>
+          <input
+            {...register("nombre", { required: "El campo Nombre es requerido" })}
+            type="text"
+            placeholder=""
+          />
+          {errors.nombre && <p>{errors.nombre.message}</p>}
           </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Enviar</button>
+          <div>
+          <label>Email</label>
+          <input
+            {...register("email", { required: "El campo Email es requerido", pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, message: "Email inválido" } })}
+            type="email"
+            placeholder=""
+          />
+           {errors.email && <p style={{color:'#e98f2d', fontSize: '16px'}}>{errors.email.message}</p>}
+          </div>        
         </div>
+
+        <label>Mensaje</label>
+        <textarea
+          {...register("mensaje", { required: "El campo Mensaje es requerido" })}
+          placeholder=""
+        />
+        {errors.mensaje && <p >{errors.mensaje.message}</p>}
+        <button type="submit">
+          Enviar
+        </button>
       </form>
       <div className={styles.socialMedia}>
         <p>Envíanos un mensaje o síguenos por redes sociales</p>
