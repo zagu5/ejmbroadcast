@@ -5,22 +5,9 @@ import '../styles/carousel.css';
 import { Link } from 'react-router-dom';
 import banner3 from '../assets/banners/Banner3.png';
 import banner1 from '../assets/banners/Banner1.png';
-import banner4 from '../assets/banners/Banner4.png';
+import banner4 from '../assets/banners/Banner_Home_2.png';
 import banner2 from '../assets/banners/Banner2.png';
 import  WhatsAppButton  from './WhatsAppButton';
-import canon from '../assets/logos/canon.svg';
-import angelbird from '../assets/logos/angelbird.svg';
-import datavideo from '../assets/logos/datavideo.svg';
-import fora from '../assets/logos/fora.svg';
-import fujifilm from '../assets/logos/fujifilm.svg';
-import hollyland from '../assets/logos/hollyland.svg';
-import jvc from '../assets/logos/jvc.svg';
-import panasonic from '../assets/logos/panasonic.svg';
-import roland from '../assets/logos/roland.svg';
-import sony from '../assets/logos/sony.svg';
-import sure from '../assets/logos/sure.svg';
-import teradek from '../assets/logos/teradek.svg';
-import aceail from '../assets/logos/aceail.png';
 
 
 const MyCarousel = () => {
@@ -75,22 +62,7 @@ const MyCarousel = () => {
           <div className="text">
             <div className="container-fluid">
               <p style={{ fontSize: '30px', color: '#fff', textAlign:'start' }}>Algunas de</p>
-              <h2 style={{ color: '#e98f2d' }}>Nuestras Marcas</h2>
-              <ul className="logos logos3">
-                <li><img src={panasonic} alt="panasonic"/></li>
-                <li><img src={sony} alt="sony"/></li>
-                <li><img src={canon} alt="canon"/></li>
-                <li><img src={angelbird} alt="angelbird"/></li>
-                <li><img src={datavideo} alt="eartec"/></li>
-                <li><img src={fora} alt="magewell"/></li>
-                <li><img src={fujifilm} alt="magix"/></li>
-                <li><img src={hollyland} alt="optics"/></li>
-                <li><img src={jvc} alt="red"/></li>
-                <li><img src={roland} alt="roland"/></li>
-                <li><img src={sure} alt="sure"/></li>
-                <li><img src={teradek} alt="teradek"/></li>
-                <li><img src={aceail} alt="aceail"/></li>
-              </ul>
+              <h2 style={{ color: '#e98f2d', marginBottom:'40px'}}>Nuestras Marcas</h2>
             </div>
           </div>
         </div>

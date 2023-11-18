@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import style from '../styles/AboutPage.module.css'
-import banner from '../assets/images/about/Banner_1.png'
+import banner from '../assets/images/about/Banner_Nosotros_1.png'
 import iconhands from '../assets/images/about/iconhands.svg'
 import iconcamera from '../assets/images/about/iconcamera.svg'
 import iconok from '../assets/images/about/iconok.svg'
@@ -64,6 +64,7 @@ const AboutPage = () => {
         </dir>
 
         <Footer/>
+        {/* <WhatsAppButton/> */}
     </>
   )
 }
