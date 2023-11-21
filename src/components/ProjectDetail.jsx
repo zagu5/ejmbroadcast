@@ -1,4 +1,6 @@
 /*ProjectDetail.jsx*/
+import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,8 +11,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ModalImage from 'react-modal-image';
 import WhatsAppButton from "../components/WhatsAppButton";
-import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 
 const ProjectDetail = ({ projectData }) => {
