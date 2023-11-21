@@ -11,15 +11,29 @@ const Header = () => {
   const [language, setLanguage] = React.useState('es');
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isEquipmentDropdownOpen, setIsEquipmentDropdownOpen] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage(language === 'es' ? 'en' : 'es');
   };
 
  
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleProjectsDropdown = () => {
+    setIsProjectsDropdownOpen(!isProjectsDropdownOpen);
+    setIsServicesDropdownOpen(false);
+  };
+
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+    setIsProjectsDropdownOpen(false);
+  };
+
+  const toggleEquipmentDropdown = () => {
+    setIsEquipmentDropdownOpen(!isEquipmentDropdownOpen);
+    setIsProjectsDropdownOpen(false);
+    setIsServicesDropdownOpen(false);
   };
 
   const scrollToTop = () => {
@@ -73,10 +87,10 @@ const Header = () => {
             </RouterLink>
           </li>
           <li className="dropdown"  >
-            <ScrollLink to="projects" smooth={true} duration={1000} onClick={toggleDropdown}>
+            <ScrollLink to="projects" smooth={true} duration={1000} onClick={toggleProjectsDropdown}>
             {language === 'es' ? 'Proyectos' : 'Projects'}
             </ScrollLink>
-            {isDropdownOpen && (
+            {isProjectsDropdownOpen && (
               <ul className="dropdown-menu open">
                 <li>
                   <RouterLink to="/projects/project1" >
@@ -111,25 +125,58 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li>
-            <Link 
-              to="/" 
-              onClick={() => setTimeout(() => {
-                document.getElementById("services").scrollIntoView({ behavior: "smooth" });
-              }, 0)}
-            >
-              {language === 'es' ? 'Servicios' : 'Services'}
-            </Link>
+          <li className="dropdown"  >
+            <ScrollLink to="services" smooth={true} duration={1000} onClick={toggleServicesDropdown}>
+            {language === 'es' ? 'Servicios' : 'services'}
+            </ScrollLink>
+            {isServicesDropdownOpen && (
+              <ul className="dropdown-menu open">
+                <li>
+                  <RouterLink to="/services/asesoria" >
+                    Asesoria en diseño y construcción
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/services/venta" >
+                    Venta de equipos de Broadcast
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/services/talleres" >
+                    Talleres y Seminarios
+                  </RouterLink>
+                </li>
+              </ul>
+            )}
           </li>
-          <li>
-          <Link 
-            to="/" 
-            onClick={() => setTimeout(() => {
-              document.getElementById("equipment").scrollIntoView({ behavior: "smooth" });
-            }, 0)}
-          >
+          <li className="dropdown"  >
+          <ScrollLink to="equipment" smooth={true} duration={1000} onClick={toggleEquipmentDropdown}>
             {language === 'es' ? 'Equipos' : 'Equipment'}
-          </Link>
+          </ScrollLink>
+            {isEquipmentDropdownOpen && (
+              <ul className="dropdown-menu open">
+                <li>
+                  <RouterLink to="/equipment/fotografiayvideo" >
+                    Fotografía y video
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/equipment/accesorios" >
+                    Accesorios de foto y video
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/equipment/audio" >
+                    Audio
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/equipment/software" >
+                    Software e interfaces
+                  </RouterLink>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
           <Link 
