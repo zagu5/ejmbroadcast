@@ -8,6 +8,7 @@ import banner2 from '../assets/images/about/Banner_2.png'
 import foto1 from '../assets/images/about/foto_1.png'
 import foto2 from '../assets/images/about/foto_2.png'
 import Footer from '../components/Footer'
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const AboutPage = () => {
   return (
@@ -64,7 +65,7 @@ const AboutPage = () => {
         </dir>
 
         <Footer/>
-        {/* <WhatsAppButton/> */}
+        <WhatsAppButton/>
     </>
   )
 }

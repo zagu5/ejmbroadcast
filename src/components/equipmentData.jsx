@@ -64,12 +64,14 @@ export const equipmentData = {
         {name: 'jvc', image: jvc, minicon:iconvideo},
         {name: 'aidaImaging', image: aidaimaging, minicon:iconvideo},
         {name: 'optics', image: ptzoptics, minicon:iconvideo},
+        {name: 'datavideo', image: fujifilm, minicon:iconaccesorios},
       ]
     },
     accesorios: {
       image: accesoriosImage,
       title: 'ACCESORIOS DE FOTO Y VIDEO',
       icon: tripodeIcon,
+      text: 'MARCAS ALIADAS',
       brands: [
         {name: 'panasonic', image: sony, minicon:iconaccesorios },
         {name: 'sony', image: canon, minicon:iconaccesorios},
@@ -96,6 +98,7 @@ export const equipmentData = {
         image: headerSoftware,
         title: 'AUDIO',
         icon: audioIcon,
+        text: 'MARCAS ALIADAS',
         brands: [
           {name: 'panasonic', image: panasonic, minicon:iconaudio },
           {name: 'sony', image: shure, minicon:iconaudio},
@@ -108,6 +111,7 @@ export const equipmentData = {
         image: headerSoftware,
         title: 'SOTWARE E INTERFACES',
         icon: softwareIcon,
+        text: 'MARCAS ALIADAS',
         brands: [
           {name: 'panasonic', image: blackmagic, minicon:iconsoftware },
           {name: 'sony', image: birddog, minicon:iconsoftware},
