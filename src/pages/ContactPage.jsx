@@ -4,7 +4,6 @@ import intlTelInput from 'intl-tel-input';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import style from '../styles/ContactPage.module.css';
-import axios from "axios";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 const ContactPage = () => {
