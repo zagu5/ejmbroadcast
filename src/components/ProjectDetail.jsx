@@ -1,18 +1,14 @@
 /*ProjectDetail.jsx*/
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useScrollToTop } from './useScrollToTop';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import Footer from './Footer';
 import style from '../styles/projectDetail.module.css';
-import { useScrollToTop } from './useScrollToTop';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import ModalImage from 'react-modal-image';
 import WhatsAppButton from "../components/WhatsAppButton";
-
-
+import Modal from './Modal';
 
 const ProjectDetail = ({ projectData }) => {
   useScrollToTop();
@@ -25,21 +21,34 @@ const ProjectDetail = ({ projectData }) => {
       </React.Fragment>
     ));
   }
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll:4,
+
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentIndex, setcurrentIndex] = useState(null);
+
+  const handleClick = (image,index) => {
+    setcurrentIndex(index);
+    setClickedImg(image)
   };
 
-  const carouselItems = projectData.carouselImages.map((image, index) => (
-    <ModalImage 
-      key={index}
-      small={image.small}
-      large={image.large}
-     />
-  ));
+  const handleRotationRight = () => {
+    if (currentIndex === projectData.carouselImages.length - 1) {
+      setcurrentIndex(0);
+      setClickedImg(projectData.carouselImages[0].large);
+    } else {
+      setcurrentIndex(currentIndex + 1);
+      setClickedImg(projectData.carouselImages[currentIndex + 1].large);
+    }
+  }
+
+  const handleRotationLeft = () => {
+    if (currentIndex === 0) {
+      setcurrentIndex(projectData.carouselImages.length - 1);
+      setClickedImg(projectData.carouselImages[projectData.carouselImages.length - 1].large);
+    } else {
+      setcurrentIndex(currentIndex - 1);
+      setClickedImg(projectData.carouselImages[currentIndex - 1].large);
+    }
+  }
 
   return ( 
     <>
@@ -69,12 +78,26 @@ const ProjectDetail = ({ projectData }) => {
         </div>
         <p className={style.description}><TextWithBreaks text={projectData.description} /></p>
         </div>
-        <Slider {...settings} className={style.card}>{carouselItems}</Slider>
+        <div className={style.wrapper}>
+            {projectData.carouselImages.map((image, index) => (
+              <div key={index} className={style.wrapperImages}>
+                <img 
+                  src={image.small} 
+                  alt="Imagen del carrusel" 
+                  onClick={() => handleClick(image.large)} />
+              </div>
+            ))}
+            {clickedImg && <Modal 
+            clickedImg={clickedImg}
+            handleRotationRight={handleRotationRight}
+            setClickedImg={setClickedImg}
+            handleRotationLeft={handleRotationLeft}
+            />}
+        </div>
         <Link to='/contact-form' style={{textDecoration: 'none'}}><button  type='button' className={style.buton}>Estoy interesado</button></Link>
         <Footer/>
         <WhatsAppButton />
     </>
-
   );
 };
 
