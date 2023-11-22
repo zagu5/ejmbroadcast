@@ -163,10 +163,7 @@ export const projectData = {
       services: 'Dotación e implementación del sistema audiovisual '+
                 'para su propuesta virtual informativa ',
       carouselImages: [
-        {small: revistasemana, large: revistasemana},
-        {small: revistasemana, large: revistasemana},
-        {small: revistasemana, large: revistasemana},
-        {small: revistasemana, large: revistasemana},
+
       ]
     },
 

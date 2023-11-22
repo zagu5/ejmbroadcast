@@ -47,7 +47,7 @@ const Header = () => {
 
   useEffect(() => {
     if (location.pathname === "/") {
-      document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
 
@@ -189,14 +189,9 @@ const Header = () => {
           </Link>
           </li>
           <li>
-          <Link 
-            to="/" 
-            onClick={() => setTimeout(() => {
-              document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-            }, 0)}
-          >
-            {language === 'es' ? 'Contacto' : 'Contact'}
-          </Link>
+          <ScrollLink to="footer" smooth={true} duration={1000}>
+          {language === 'es' ? 'Contacto' : 'Contact'}
+          </ScrollLink>
           </li>
           {/* <li>
             <RouterLink to="news">

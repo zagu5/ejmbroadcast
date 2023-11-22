@@ -29,7 +29,7 @@ const Homepage = () => {
         <section id={"about"}>
         <AboutSection/>
         </section>
-        <Footer id={"contact"}/>
+        <Footer id={"footer"}/>
       </section>
 
     </>
