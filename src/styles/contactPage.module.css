@@ -67,20 +67,17 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* Estilos específicos para los campos de selección de país y teléfono */
+
 select[name="country"],
 input[name="phoneNumber"] {
   flex: 1;
- /* Personaliza el ancho según tus necesidades */
+ 
 }
 
-/* Estilos para la fila que contiene los campos de país y teléfono */
 
-
-/* Estilos para campos requeridos */
 input[required],
 textarea[required] {
-  border-color: none; /* Cambia el color del borde para resaltar los campos requeridos */
+  border-color: none; 
 }
 
   
