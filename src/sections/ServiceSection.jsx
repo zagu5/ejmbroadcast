@@ -1,12 +1,20 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from '../styles/services.module.css';
 
 const servicesData = [
   {
     bgColor: "#005c9a",
-    title: "En el mundo del Broadcast, el escenario perfecto se logra combinando la asesoría idónea, los equipos adecuados y buenos precios.",
-    subtitle: "SIN OLVIDAR EL FACTOR WOW",
-
+    title: (
+      <div style={{ textAlign:'center'}}>
+        &ldquo;En el mundo del Broadcast, el escenario perfecto se logra combinando la asesoría idónea, los equipos adecuados y buenos precios.&rdquo;
+      </div>
+    ),
+    subtitle: (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start'}}>
+        &ldquo;SIN OLVIDAR EL FACTOR WOW&rdquo;
+      </div>
+    ),
   },
   {
     bgColor: "#a9a9a9",
@@ -25,7 +33,7 @@ const servicesData = [
   },
 ];
 
-import PropTypes from 'prop-types';
+
 
 const Service = ({ bgColor, title, subtitle, serviceId }) => (
   <Link to={`services${serviceId}`} style={{ textDecoration: 'none', color: 'inherit' }}> 
@@ -37,10 +45,10 @@ const Service = ({ bgColor, title, subtitle, serviceId }) => (
 );
 
 Service.propTypes = {
-    bgColor: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string,
-    serviceId: PropTypes.string,
+  bgColor: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  serviceId: PropTypes.string,
 };
 
 const ServiceSection = () => {

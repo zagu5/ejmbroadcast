@@ -6,6 +6,21 @@ import Footer from "../components/Footer";
 import style from '../styles/ContactPage.module.css';
 import WhatsAppButton from "../components/WhatsAppButton";
 
+const initialFormData = {
+  name: '',
+  country: '',
+  phoneNumber: '',
+  usaWhatsapp: false,
+  tipoAsesoria: '',
+  email: '',
+  nombreEmpresa: '',
+  direccion: '',
+  codigoPostal: '',
+  pais: '',
+  message: '',
+  newsletter: false,
+};
+
 const ContactPage = () => {
   const phoneInput = useRef();
   const iti = useRef();
@@ -20,28 +35,32 @@ const ContactPage = () => {
     });
   }, []);
 
-  const validatePhoneNumber = () => {
-    if (iti.isValidNumber()) {
-      console.log('Número de teléfono válido');
-    } else {
-      console.log('Número de teléfono no válido');
-    }
-  };
+  const [formData, setFormData] = useState(initialFormData);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    country: '',
-    phoneNumber: '',
-    usaWhatsapp: false,
-    tipoAsesoria: '',
-    email: '',
-    nombreEmpresa: '',
-    direccion: '',
-    codigoPostal: '',
-    pais: '',
-    message: '',
-    newsletter: false,
-  });
+  const validateForm = () => {
+    let isValid = true;
+    let errorMessage = "";
+  
+    // Validar campos requeridos
+    if (!formData.name || !formData.email || !formData.message) {
+      isValid = false;
+      errorMessage += "Los campos nombre, email y mensaje son requeridos.\n";
+    }
+  
+    // Validar formato de correo electrónico
+    if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
+      isValid = false;
+      errorMessage += "El correo electrónico no es válido.\n";
+    }
+    
+    // Validar número de teléfono
+    if (!iti.current.isValidNumber()) {
+      isValid = false;
+      errorMessage += "El número de teléfono no es válido.\n";
+    }
+    
+    return { isValid, errorMessage };
+  };
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -56,6 +75,13 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    const { isValid, errorMessage } = validateForm();
+    if (isValid) {
+      alert('Formulario enviado');
+      setFormData(initialFormData);
+    } else {
+      alert(errorMessage);
+    }
   };
 
   const formFields = [
@@ -81,7 +107,7 @@ const ContactPage = () => {
           <div key={index} className={field.type === 'select' ? style.row : null}>
             <label htmlFor={field.name}>{field.label}</label>
             {field.type === 'tel' ? (
-              <input ref={phoneInput} type="tel" onBlur={validatePhoneNumber} />
+              <input ref={phoneInput} type="tel" />
             ) : field.type === 'textarea' ? (
               <textarea
                 id={field.name}
