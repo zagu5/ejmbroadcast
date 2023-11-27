@@ -22,6 +22,10 @@
   flex-direction: row-reverse;
 }
 
+.text-reverse {
+  margin-right: 20px; 
+}
+
 .container-fluid {
   width: 100%;
   padding-bottom:8em;
@@ -35,7 +39,7 @@
 h2 {
   font-family: 'AvertaStd-Extrabold';
   color: #fff;
-  font-size: 65px;
+  font-size: 96.89px;
   line-height: 0.9em;
   font-weight: 400;
   letter-spacing: 0;
@@ -49,10 +53,10 @@ h2 {
 }
 
 p {
-  font-family: 'Averta-Regular';
+  font-family: 'AvertaStd-Extrabold';
   color: #fff;
-  font-size: 25px;
-  line-height: 0.9em;
+  font-size: 40px;
+  line-height: 1.5em;
   font-weight: 400;
   letter-spacing: 0;
   margin-bottom: 0;
@@ -77,6 +81,7 @@ p {
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 

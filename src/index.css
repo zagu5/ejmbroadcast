@@ -1,10 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:ital,wght@1,900&display=swap');
 
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url('./fonts/Averta-Regular.ttf') format('woff2'),
+       url('./fonts/Averta-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'AvertaStd-Extrabold';
+  src: url('./fonts/AvertaStd-ExtraBold.ttf') format('woff2'),
+       url('./fonts/AvertaStd-ExtraBold.ttf') format('woff');
+  font-weight: 400;
+}
 :root {   
-    font-family: 'Averta-Regular', 'AvertaStd-Extrabold', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);

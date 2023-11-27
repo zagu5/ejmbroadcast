@@ -18,7 +18,7 @@ const MyCarousel = () => {
       showStatus={false} // Oculta los indicadores de estado (opcional)
       showThumbs={false} // Oculta las miniaturas (opcional)
       infiniteLoop={true} // Activa el bucle infinito (opcional)
-      autoPlay={true} // Activa la reproducción automática (opcional)
+      autoPlay={false} // Activa la reproducción automática (opcional)
     >
     <div className='featured' >
         <img src={banner1} alt="Banner1" />
@@ -27,7 +27,7 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <h2>Bienvenido a <br/> EJM Broadcast</h2>
               <p>Un equipo de profesionales audiovisuales <br/>  que provee soluciones, asesoria y buenos<br/>precios para el mundo del Broadcast</p>
-              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white'}} >Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>        
@@ -39,7 +39,7 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <p>Ofrecemos la última tecnología <br/> respaldada por nuestra</p>
               <h2>visión creativa <br/> y experiencia</h2>
-              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white'}}>Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ const MyCarousel = () => {
           <div className="text-reverse">
             <div className="container-fluid">
               <p >Integramos los sistemas de audio, video <br/> e iluminación para crear espacios <br/>atractivos que intensifiquen</p>
-              <h2>la experiencia de <br/> su audiencia</h2>
-              <Link to='/contact-form'><button id="contact" type='button' className='btn'>Conéctate con nosotros</button></Link>
+              <h2>la experiencia de <br/> su audiencia.</h2>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white'}} >Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>
@@ -61,8 +61,8 @@ const MyCarousel = () => {
         <div className="vcenter">
           <div className="text">
             <div className="container-fluid">
-              <p style={{ fontSize: '30px', color: '#fff', textAlign:'start' }}>Algunas de</p>
-              <h2 style={{ color: '#e98f2d', marginBottom:'40px'}}>Nuestras Marcas</h2>
+              <p style={{ fontSize: '56.79px', fontFamily: 'Averta-Regular', color: '#fff', textAlign:'start', marginLeft:'40px', marginTop: '-5em'}}>Algunas de</p>
+              <h2 style={{fontSize: '96.89px', color: '#e98f2d', marginLeft:'40px'}}>Nuestras Marcas</h2>
             </div>
           </div>
         </div>

@@ -87,14 +87,14 @@ const ContactPage = () => {
   const formFields = [
     { label: 'Nombre*', type: 'text', name: 'name' },
     { label: 'Teléfono*', type: 'tel', name: 'phoneNumber' },
-    { label: '¿Usas WhatsApp?', type: 'checkbox', name: 'usaWhatsapp' },
-    { label: 'Tipo de Asesoría', type: 'text', name: 'tipoAsesoria' },
-    { label: 'Email', type: 'email', name: 'email' },
+    { label: '¿Usas WhatsApp?', type: 'text', name: 'usaWhatsapp' },
+    { label: '¿Tipo de Asesoría?', type: 'text', name: 'tipoAsesoria' },
+    { label: 'Email*', type: 'email', name: 'email' },
     { label: 'Nombre de la Empresa*', type: 'text', name: 'nombreEmpresa', required: true },
     { label: 'Dirección*', type: 'text', name: 'direccion', required: true },
     { label: 'Código Postal*', type: 'text', name: 'codigoPostal', required: true },
     { label: 'País*', type: 'text', name: 'pais', required: true },
-    { label: 'Message', type: 'textarea', name: 'message' },
+    { label: 'Mensaje*', type: 'textarea', name: 'message' },
   ];
 
   return (
@@ -103,29 +103,39 @@ const ContactPage = () => {
       <main className={style.mainStyle}>
       <h1 className={style.h1}>Agenda una asesoria personalizada con nuestros expertos para date una mejor <br/> respuesta a las necesidades de tu proyecto.</h1>
       <form className={style.formStyle} onSubmit={handleSubmit}>
-        {formFields.map((field, index) => (
-          <div key={index} className={field.type === 'select' ? style.row : null}>
-            <label htmlFor={field.name}>{field.label}</label>
-            {field.type === 'tel' ? (
-              <input ref={phoneInput} type="tel" />
-            ) : field.type === 'textarea' ? (
-              <textarea
-                id={field.name}
-                name={field.name}
-                value={formData[field.name]}
-                onChange={handleInputChange}
-              />
-            ) : (
-              <input
-                id={field.name}
-                type={field.type}
-                name={field.name}
-                value={formData[field.name]}
-                onChange={handleInputChange}
-              />
-            )}
-          </div>
-        ))}
+      {formFields.map((field, index) => (
+      <div key={index} className={field.type === 'select' ? style.row : null}>
+        <label htmlFor={field.name}>
+          {field.label}
+          {field.type === 'tel' ? (
+            <input 
+              ref={phoneInput} 
+              type="tel" 
+              id={field.name}
+              name={field.name}
+              autoComplete="tel"
+            />
+          ) : field.type === 'textarea' ? (
+            <textarea
+              id={field.name}
+              name={field.name}
+              value={formData[field.name]}
+              onChange={handleInputChange}
+              autoComplete="on"
+            />
+          ) : (
+            <input
+              id={field.name}
+              type={field.type}
+              name={field.name}
+              value={formData[field.name]}
+              onChange={handleInputChange}
+              autoComplete="on"
+            />
+          )}
+        </label>
+      </div>
+))}
         <button type="submit">Enviar</button>
       </form>
     </main>

@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import '../styles/whatsapp.css'
-
+import whatsappIcon from '../assets/logos/whatsapp.png'
 
 const WhatsAppButton = () => {
   const phoneNumber = '573118603977'; // Reemplazar numero de whatsapp a contactar
@@ -15,7 +13,7 @@ const WhatsAppButton = () => {
     <>
     <div className="whatsapp-button-container">
         <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} />
+          <img src={whatsappIcon} alt="" />
         </button>
     </div>
 

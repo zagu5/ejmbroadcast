@@ -18,8 +18,8 @@
 
 /* Estilo para el logo */
 .header img {
-
-  height: 55px;
+  height: 77,4055 px;
+  width: 264,5321 px;
   position:absolute;
   display:flex; 
   align-items:center; 
@@ -36,16 +36,18 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content:right;
+    justify-content: flex-end;
     align-items:center;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
-
+    font-size: 31.298px;
+    font-weight: 400;
+    margin-right: 140px;
   }
   
   .header li {
     margin: 0 15px; 
+
+ 
   }
   
   .header a {
