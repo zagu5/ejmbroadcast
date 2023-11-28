@@ -1,33 +1,37 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from '../styles/services.module.css';
+import fondoazul from '../assets/images/services/fondo_azul.png';
+import fondoclaro from '../assets/images/services/fondo_claro.png';
+import fondooscuro from '../assets/images/services/fondo_oscuro.png';
+
 
 const servicesData = [
   {
-    bgColor: "#005c9a",
+    image: fondoazul,
     title: (
-      <div style={{ textAlign:'center'}}>
-        &ldquo;En el mundo del Broadcast, el escenario perfecto se logra combinando la asesoría idónea, los equipos adecuados y buenos precios.&rdquo;
+      <div style={{ textAlign:'left', fontSize:'29px', marginBottom:'10px', marginLeft:'8px'}}>
+        En el mundo del Broadcast, el escenario perfecto se logra combinando la asesoría idónea, los equipos adecuados y buenos precios.
       </div>
     ),
     subtitle: (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start'}}>
-        &ldquo;SIN OLVIDAR EL FACTOR WOW&rdquo;
+      <div style={{justifyContent: 'center', marginTop:'10px', marginBottom:'100px', alignItems: 'flex-start', fontSize:'65px', lineHeight:'1', }}>
+        SIN OLVIDAR EL FACTOR WOW
       </div>
     ),
   },
   {
-    bgColor: "#a9a9a9",
+    image: fondoclaro,
     title: "ASESORIA EN DISEÑO Y CONSTRUCCIÓN",
     serviceId: "/asesoria",
   },
   {
-    bgColor: "#666666",
+    image: fondooscuro,
     title: "VENTA DE EQUIPOS BROADCAST",
     serviceId: "/venta",
   },
   {
-    bgColor: "#a9a9a9",
+    image: fondoclaro,
     title: "TALLERES Y SEMINARIOS",
     serviceId: "/talleres",
   },
@@ -35,9 +39,9 @@ const servicesData = [
 
 
 
-const Service = ({ bgColor, title, subtitle, serviceId }) => (
+const Service = ({ image, title, subtitle, serviceId }) => (
   <Link to={`services${serviceId}`} style={{ textDecoration: 'none', color: 'inherit' }}> 
-    <div className={styles['grid-item']} style={{ backgroundColor: bgColor }}>
+    <div className={styles['grid-item']} style={{ backgroundImage: `url(${image})` }}>
         <h1 className={styles.title}>{title}</h1>
         {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
     </div>
@@ -45,7 +49,7 @@ const Service = ({ bgColor, title, subtitle, serviceId }) => (
 );
 
 Service.propTypes = {
-  bgColor: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   serviceId: PropTypes.string,

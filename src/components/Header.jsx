@@ -198,7 +198,7 @@ const Header = () => {
             {language === 'es' ? 'Noticias' : 'News'}
             </RouterLink>
           </li> */}
-          <button onClick={toggleLanguage}>
+          <button onClick={toggleLanguage} style={{fontSize: '31.2977px'}}>
             {language === 'es' ? 'EN' : 'ES'}
           </button>
           <button className="scroll-to-top" onClick={scrollToTop}>

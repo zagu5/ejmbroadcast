@@ -17,6 +17,7 @@
   overflow: hidden;
 }
 
+
 .content{
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@
 
 .title {
   color: #fff; 
-  font-size: 25px; 
+  font-size: 31px; 
   font-family: 'Averta-Regular';
   font-weight: 400;
   margin-top: 20px; 
@@ -37,37 +38,41 @@
 
 }
 
+.text {
+  padding: 60px 0; /* Ajusta el valor 20px según sea necesario */
+}
 
 .text h3 {
   color: #e98f2d; 
-  font-size: 30px; 
+  font-size: 49.891px; 
   font-family: 'AvertaStd-Extrabold';
   font-weight: 400;
-  margin-top: 20px; 
-  margin: 20px 20px 0;
+  margin-bottom: 20px; 
   line-height: 1;
   text-align: center;
 }
 
 .text p {
   color: #000000; 
-  font-size: 18px; 
+  font-size: 29px; 
   font-family: 'AvertaStd-Extrabold';
   font-weight: 400;
-  margin-bottom: 10px; 
+  /* margin-bottom: 20px;  */
   /* margin: 20px 20px 0; */
   text-align: center;
 }
 
 .boton {
   background: rgba(0, 0, 0, 0.5); 
-  border: 1px solid;
+  border: 1px solid  #fff;
+  color: #fff;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 50px;
   transition: background-color 0.3s;
   margin: 20px 20px 0;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 22.307px;
 }
 
 .boton:hover {

@@ -18,7 +18,7 @@ const MyCarousel = () => {
       showStatus={false} // Oculta los indicadores de estado (opcional)
       showThumbs={false} // Oculta las miniaturas (opcional)
       infiniteLoop={true} // Activa el bucle infinito (opcional)
-      autoPlay={false} // Activa la reproducción automática (opcional)
+      autoPlay={true} // Activa la reproducción automática (opcional)
     >
     <div className='featured' >
         <img src={banner1} alt="Banner1" />
@@ -51,7 +51,7 @@ const MyCarousel = () => {
             <div className="container-fluid">
               <p >Integramos los sistemas de audio, video <br/> e iluminación para crear espacios <br/>atractivos que intensifiquen</p>
               <h2>la experiencia de <br/> su audiencia.</h2>
-              <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white'}} >Conéctate con nosotros</button></Link>
+              <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white', marginTop:'40px'}} >Conéctate con nosotros</button></Link>
             </div>
           </div>
         </div>

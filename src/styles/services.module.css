@@ -12,13 +12,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80vh;
     gap: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     align-items: stretch;
   }
   
   .grid-item {
     height: 100%;
-    text-align: left;
+    text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
@@ -27,25 +27,27 @@
   
   .title{
     font-family: 'AvertaStd-Extrabold';
-    font-size: 24px;
-    margin: 10px 20px;
+    font-size: 38px;
+    margin: 55px 20px;
+
   }
   
   .subtitle{
     font-family: 'AvertaStd-Extrabold';
     font-size: 40px;
-    margin-bottom: 20px;
-    margin: 10px 20px;
+    margin: 0 20px;
   }
+  
   .boton {
     background: #e98f2d; 
-    padding: 10px 20px;
+    padding: 10px 40px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: background-color 0.3s;
     margin: 20px 20px 0;
-    font-size: 16px;
+    font-size: 43.942px;
     border: none;
+    color: #fff;
   }
   
   .boton:hover {

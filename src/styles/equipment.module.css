@@ -9,7 +9,7 @@
   
   .title {
     font-family: 'AvertaStd-Extrabold';
-    font-size: 40px;
+    font-size: 67.487px;
     color: #005C9A; 
     text-align: center;
     margin-top: 30px;
@@ -17,7 +17,7 @@
   
   .subtitle {
     font-family: 'AvertaStd-Extrabold';
-    font-size: 20px;
+    font-size: 22.59px;
     color: #005C9A; 
     text-align: center;
     margin-top: 20px;
@@ -34,13 +34,13 @@
   }
   
   .iconContainer img {
-    width: 70px;
-    height: 70px;
+    width: 160px;
+    height: 140px;
   }
   
   .iconContainer p {
     font-family: 'AvertaStd-Extrabold';
-    font-size: 20px;
+    font-size:  49.891px;
     margin-top: 10px;
     color: #000000;
     text-align: center;
@@ -49,20 +49,21 @@
   .text2 {
     font-family: 'AvertaStd-ExtraBold';
     color: #000000;
-    font-size: 15px;
+    font-size: 22.592px;
     text-align: center;
     margin-top: 50px;
   }
   
   .boton {
-    background: #e98f2d; 
-    padding: 10px 20px;
+    background: #e98f2d;
+    padding: 10px 40px; 
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: background-color 0.3s;
     margin: 20px 20px 0;
-    font-size: 16px;
+    font-size: 43.942px;
     border: none;
+    color: #fff;
   }
   
   .boton:hover {

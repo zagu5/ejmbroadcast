@@ -12,6 +12,7 @@
     min-height: 100vh;
   }
 
+
   .contactInfo, .contactForm {
     flex: 1;
     text-align: left;
@@ -28,7 +29,7 @@
   .contactForm {
     display: flex;
     flex-direction: column;
-    margin-right: 50px; 
+    margin-right: 10px; 
   }
   
   .contactForm .inputRow {
@@ -36,9 +37,16 @@
     justify-content: flex-start;
     width: 100%;
     gap: 20px;
+    font-size: 29.997px;
+
+  }
+
+  .inputContainer > div {
+    margin-bottom: 10px;
   }
 
   .contactForm .inputRow div {
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -46,16 +54,21 @@
   
   .contactForm .inputRow input {
     flex: 1;
+    width: 275.3px;
   }
   
   .contactForm textarea {
-    width: 100%;
+    width: 566.8px;
     height: 100px;
+  }
+
+  .contactForm label{
+    font-size: 29.997px;
   }
 
 
   .formTitle {
-    font-size: 40px;
+    font-size: 59.3823px;
     font-family: 'AvertaStd-Bold', sans-serif;
     margin-bottom: 20px;
   }
@@ -76,6 +89,7 @@
     display: block;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 29.997px;
   }
   
   form button:hover {
@@ -84,18 +98,20 @@
 
   .socialMedia {
     margin-top: 20px;
+    font-size: 37.304px;
   }
   
   .footerIcons {
     text-align: left;
     margin-top: 20px;
+    
   }
   
   .footerIcons a {
     text-decoration: none;
     color: white;
     margin: 10px;
-    font-size: 24px;
+    font-size: 32px;
   }
   
   .footerText {
@@ -105,11 +121,15 @@
     bottom: 0;
     left: 0;
     right: 0;
+    font-size: 29.997px;
   }
   
   .text1 {
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 29.997;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1;
   }
   
   .text2 {

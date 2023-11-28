@@ -29,7 +29,7 @@ function ContactForm() {
   return (
     <div className={styles.contactForm}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.inputRow}>
+        <div className={`${styles.inputRow} ${styles.inputContainer}`}>
           <div>
           <label>Nombre</label>
           <input
@@ -61,7 +61,7 @@ function ContactForm() {
         </button>
       </form>
       <div className={styles.socialMedia}>
-        <p>Envíanos un mensaje o síguenos por redes sociales</p>
+        <p>Envíanos un mensaje o síguenos <br/> por redes sociales</p>
         <div className={styles.footerIcons}>
           <a href="https://m.facebook.com/EjmBroadcast" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/ejm_broadcast/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>

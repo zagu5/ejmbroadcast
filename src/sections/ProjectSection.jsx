@@ -30,11 +30,11 @@ const ProjectSection = () => {
     <>
     <section id={"projects"} className='section'>
     <div className='text'>
-          <h3>Lo más importante es lograr que su audiencia <br /> tenga una experiencia única</h3> 
+          <h3>Lo más importante es lograr que su audiencia <br /> tenga una experiencia única, </h3> 
           <p>aprovechando la tecnología para promover <br /> su participación en cada evento </p>
-          </div>
+    </div>
       <div className="grid-container">
-        <Project image={cfc} title="Centro Familiar Cristiano" projectId="project1"/>
+        <Project image={cfc} title="Centro Familiar Cristiano" projectId="project1" className="title"/>
         <Project image={noventaminutos} title="90 Minutos" projectId="project2"/>
         <Project image={elp} title="El Lugar de su Presencia" projectId="project3"/>
         <Project image={mc} title="Misión Carismática" projectId="project4"/>
