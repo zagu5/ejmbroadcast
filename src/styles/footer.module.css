@@ -35,10 +35,11 @@
   .contactForm .inputRow {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
-    gap: 20px;
+    width: 50%;
+    gap: 10px;
     font-size: 29.997px;
-
+    margin-bottom: 50px;
+    margin-top: 60px;
   }
 
   .inputContainer > div {
@@ -53,32 +54,38 @@
   }
   
   .contactForm .inputRow input {
-    flex: 1;
+    /* flex: 1; */
     width: 275.3px;
+    height: 50px;
+    
   }
   
   .contactForm textarea {
     width: 566.8px;
-    height: 100px;
+    height: 120px;
   }
 
   .contactForm label{
+    font-family: 'AvertaStd-ExtraBold';
     font-size: 29.997px;
   }
 
-
   .formTitle {
     font-size: 59.3823px;
-    font-family: 'AvertaStd-Bold', sans-serif;
-    margin-bottom: 20px;
+    font-family: 'AvertaStd-ExtraBold';
+    line-height: 1;
+    margin-bottom: 10px;
   }
   
+  .dataInfo{
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
   .contactColumn {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
   
   form button {
     background-color: #e98f2d;
@@ -88,8 +95,9 @@
     border-radius: 5px;
     display: block;
     cursor: pointer;
-    margin-top: 10px;
     font-size: 29.997px;
+    margin: 20px 0px;
+
   }
   
   form button:hover {
@@ -97,8 +105,12 @@
   }
 
   .socialMedia {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 37.304px;
+  }
+
+  .socialMedia p{
+    line-height: 1;
   }
   
   .footerIcons {
@@ -111,7 +123,8 @@
     text-decoration: none;
     color: white;
     margin: 10px;
-    font-size: 32px;
+    margin-top: 30px;
+    font-size: 50px;
   }
   
   .footerText {
@@ -127,13 +140,24 @@
   .text1 {
     font-family: 'AvertaStd-ExtraBold';
     font-size: 29.997;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
     line-height: 1;
   }
   
-  .text2 {
-    margin-bottom: 2rem;
+  .text2 p {
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 29.997;
+    line-height: 1;
+  }
+
+  hr {
+    border-color: #E98F2D;
+    border-width: 2px; /* Ajusta este valor para cambiar el grosor de la línea */
+    width: 40%; /* Ajusta este valor para cambiar el ancho de la línea */
+    align-self: flex-start; /* Alinea la línea al inicio del contenedor */
+    margin-left: 140px;
+    margin-top: -90px; 
   }
 
   @media (max-width: 768px) {

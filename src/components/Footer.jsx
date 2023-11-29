@@ -8,11 +8,16 @@ function ContactInfo() {
       <div className={styles.contactColumn}>
         <h1 className={styles.formTitle}>Comencemos <br/> a trabajar</h1>
         <p className={styles.text1}>Línea de asesoría y ventas</p>
-        <p>Colombia: +57 602 620 52 95</p>
-        <p>USA: +1 561 290 9267</p>
-        <p className={styles.text2}>Whatsapp: +57 311 860 39 77</p>
+        <div className={styles.dataInfo}>
+          <p>Colombia: +57 602 620 52 95</p>
+          <p>USA: +1 561 290 9267</p>
+          <p>Whatsapp: +57 311 860 39 77</p>
+        </div>
+        <div className={styles.text2}>
         <p>Correo electrónico:</p>
         <p><a style={{color:'#e98f2d'}} href="mailto:info@ejmbroadcast.com">info@ejmbroadcast.com </a></p>
+        </div>
+
       </div>
     </div>
   );
@@ -81,6 +86,7 @@ const Footer = () => {
     <footer id={"footer"} className={styles.footer}>
       <ContactInfo />
       <ContactForm />
+      <hr />
       <span className={styles.footerText}>© {currentYear} Todos los derechos reservados Elefante Pink</span>
     </footer>
   );
