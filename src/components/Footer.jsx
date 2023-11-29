@@ -15,7 +15,7 @@ function ContactInfo() {
         </div>
         <div className={styles.text2}>
         <p>Correo electrónico:</p>
-        <p><a style={{color:'#e98f2d'}} href="mailto:info@ejmbroadcast.com">info@ejmbroadcast.com </a></p>
+        <p><a style={{color:'#e98f2d', textDecoration:'none'}} href="mailto:info@ejmbroadcast.com">info@ejmbroadcast.com </a></p>
         </div>
 
       </div>
