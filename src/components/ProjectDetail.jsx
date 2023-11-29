@@ -9,6 +9,7 @@ import Footer from './Footer';
 import style from '../styles/projectDetail.module.css';
 import WhatsAppButton from "../components/WhatsAppButton";
 import Modal from './Modal';
+//import flechabajo from '../assets/images/projects/flechabajo.svg'
 
 const ProjectDetail = ({ projectData }) => {
   useScrollToTop();
@@ -54,24 +55,28 @@ const ProjectDetail = ({ projectData }) => {
     <>
         <Header/>
         <div className={style.content}>
-        <h2 className={style.title}>{projectData.title}</h2>
+          <div className={style.titleContainer} >
+          <h2 className={style.title}>{projectData.title}</h2>
+          {/* <img src={flechabajo} alt="" /> */}
+          </div>
+
         <img src={projectData.image} alt="cfc" />        
         <div className={style.row}>
           <div className={style.column}>
             <div className={style.location}>
-              <strong>Locación</strong>
+              <strong style={{fontSize:'26px'}}>Locación</strong>
               <br />{projectData.location}
             </div>
           </div>
           <div className={style.column}>
             <div className={style.capacity}>
-              <strong>Capacidad</strong>
+              <strong style={{fontSize:'26px'}}>Capacidad</strong>
               <br />{projectData.capacity}
             </div>
           </div>
           <div className={`${style.column} ${style.lastColumn}`}>
             <div className={style.services}>
-              <strong>Servicios</strong>
+              <strong style={{fontSize:'26px'}}>Servicios</strong>
               <br />{projectData.services}
             </div>
           </div>

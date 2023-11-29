@@ -13,8 +13,10 @@
     height: auto; 
   }
   
-  .title {
-    font-size: 28px;
+
+   .title {
+    font-size: 39.591px;
+    font-family: 'AvertaStd-ExtraBold';
     margin: 10px 0;
     color: #ffffff;
     position: absolute;
@@ -22,6 +24,8 @@
     top: 70%;
     left: 15%;
   }
+
+
 
   /* Estilos para la fila y columnas */
   .row {
@@ -52,9 +56,10 @@
   .services {
     padding: 10px;
     text-align: left;
-    margin-top: 20px; 
+
     color: #005C9A;
     font-size: 20px;
+    font-family: 'AvertaStd-Extrabold';
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -62,8 +67,15 @@
 
   
   .description {
-    font-size: 16px;
-    margin: 20px 100px;
+    font-family: 'AvertaStd-Extrabold';
+    font-size: 18px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
     color: black;
     text-align: justify;
     line-height: 1.5;
@@ -84,15 +96,18 @@
     background: #e98f2d; 
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: background-color 0.3s;
-    margin: 20px;;
+    /* margin: 20px; */
+    margin: 50px 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 43.942px;
+    font-family: 'AvertaStd-ExtraBold';
     text-decoration: none;
     border: none;
+    color:#ffffff;
   }
 
   .buton:hover {
@@ -105,7 +120,7 @@
     gap: 0;
     justify-content: center; 
     align-items: center; 
-    /* height: 100vh;  */
+    margin: 80px 20px;
   }
 
   .wrapper img {
