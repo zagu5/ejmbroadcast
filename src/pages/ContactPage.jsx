@@ -101,7 +101,10 @@ const ContactPage = () => {
     <>
       <Header />
       <main className={style.mainStyle}>
-      <h1 className={style.h1}>Agenda una asesoria personalizada con nuestros expertos para date una mejor <br/> respuesta a las necesidades de tu proyecto.</h1>
+      <h1 className={style.h1}>
+       <span className={style.color1}>Agenda una asesoria personalizada con nuestros expertos para darte una mejor <br/> respuesta a las necesidades de tu proyecto. </span> 
+       <span className={style.color2}>Por favor llena el formulario que se encuentra <br/> a continuación:</span>
+      </h1>
       <form className={style.formStyle} onSubmit={handleSubmit}>
       {formFields.map((field, index) => (
       <div key={index} className={field.type === 'select' ? style.row : null}>
@@ -136,7 +139,7 @@ const ContactPage = () => {
         </label>
       </div>
 ))}
-        <button type="submit">Enviar</button>
+        <button className= {style.button}type="submit">Enviar</button>
       </form>
     </main>
       <Footer />

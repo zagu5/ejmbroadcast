@@ -59,7 +59,6 @@ const ProjectDetail = ({ projectData }) => {
           <h2 className={style.title}>{projectData.title}</h2>
           {/* <img src={flechabajo} alt="" /> */}
           </div>
-
         <img src={projectData.image} alt="cfc" />        
         <div className={style.row}>
           <div className={style.column}>

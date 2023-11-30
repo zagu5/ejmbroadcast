@@ -14,7 +14,7 @@
   
   .textContainer {
     position: absolute;
-    top: 20%;
+    top: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,17 +25,19 @@
   }
 
   .title {
-    font-size: 62px;
-    font-weight: 700;
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 74px;
+    font-weight: 400;
     margin-bottom: 20px;
-    padding-left: 5rem;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);  */
   }
 
   .myClass {
+    left: -1%;
     line-height: 1.5;
     position: relative;
-    font-size: 20px;
+    font-size: 22.59px;
+    font-family: 'AvertaStd-ExtraBold';
   }
 
   .myClass::after {
@@ -50,14 +52,15 @@
   }
 
   .columnsContainer {
-    width: 50%;
+    width: 55%;
     position: absolute;
-    top: 50%;
+    top: 58%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: justify; 
+    gap: 10px;
 
   }
  
@@ -69,12 +72,12 @@
   }
 
   .subtitle {
-    font-family: 'avertaStd-extraBold';
-    font-size: 35px;
-    font-weight: 700;
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 74px;
+    font-weight: 400;
     text-align: left; 
     margin: 20px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);  */
   }
 
   .leftColumn {
@@ -86,7 +89,8 @@
   }
 
   .text{
-    font-size: 18px;
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 22.59px;
     font-weight: 400;
     margin-bottom: 20px;
     text-align: justify;
@@ -109,14 +113,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 100px;
   }
   
 
   .newTitle {
-    font-size: 35px;
-    font-weight: 700;
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 40px;
+    font-weight: 400;
     text-align: center; 
     margin: 20px 20px 40px;   
     color: #e98f2d;
@@ -124,13 +130,15 @@
   }
 
   .newParagraph {
+    font-family: 'AvertaStd-ExtraBold';
     width: 70%;
     padding: 20px;
     margin: 20px 0;
   }
 
   .paragraph{
-    font-size: 18px;
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 22.59px;
     text-align: center;
     margin: 0 40px;
     font-weight: 400; 
@@ -145,11 +153,12 @@
   }
   
   .icon {
-    margin: 0 30px; 
+    margin: 0 50px; 
   }
 
   .containerBanner{
     position: relative;
+    margin-top: 170px;
   }
 
   .paragraph2{
@@ -159,76 +168,97 @@
       left: 10%;
       text-align: justify;
       transform: translateY(-50%);
-      font-family: 'Averta-Regular';
-      font-size: 25px;
+      font-family: 'AvertaStd-ExtraBold';
+      font-size: 44.89px;
       line-height: 1; 
       font-weight: 400;
-      line-height: 1.5;
-
+      line-height: 1.2;
   }
 
   .newContainer2{
     display: flex;
-    flex-direction: inline-block;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
     margin: 40px 0;
     padding: 0 50px;
+    margin-top: 60px;
   }
   
+  .textContainer2 .image1{
+    margin-bottom: 50px;
+  }
   .textContainer2 {
     width: 50%; 
     height: auto; 
    
   }
   .image1{
-    width: 40%;
+    width: 35%;
     height: auto;
     right: 20%;
   }
 
   .title1 {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 74px;
+    font-family: 'AvertaStd-ExtraBold';
+    font-weight: 400;
     text-align: left; 
     color: #05526D;
     margin: 0 40px;
     margin-bottom: 10px;
+    line-height: 1.2;
   }
 
   .subtitle1 {
-    font-size: 35px;
+    font-size: 74px;
     font-weight: 700;
     text-align: left; 
     color: #000000;
     margin: 0 40px;
     margin-bottom: 20px;
+    line-height: 1.2;
   }
 
   .paragraph1{
-    font-size: 18px;
+    font-size: 22.59px;
     text-align: justify;
     margin: 0 40px;
     font-weight: 400; 
     line-height: 1.5;
     color: #000000;
-    margin: 0 40px;
+    margin-top: 70px;
   }
 
+  .logosEmpresas{
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+    top: 260%;
+    bottom: 0;
+    left: 0;
+    right: 0
+  }
 
   .newContainer3{
+    width: 90%;
+    height: auto;
     display: flex;
-    flex-direction: inline-block;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
     margin: 40px 0;
     padding: 0 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 90px;
   }
 
   .image2{
-    width: 50%;
+    width: 45%;
     height: auto;
     left: 20%;
   }
@@ -240,19 +270,22 @@
   }
 
   .subtitle2 {
-    font-size: 35px;
+    font-size: 74px;
     font-weight: 700;
+    font-family: 'AvertaStd-ExtraBold';
     text-align: left; 
     color: #e98f2d;
     margin: 0 40px;
     margin-bottom: 20px;
+    line-height: 1;
   }
 
   .paragraph3{
-    font-size: 18px;
+    font-size: 22.59px;
     text-align: justify;
     margin: 0 40px;
     font-weight: 400; 
+    font-family: 'AvertaStd-ExtraBold';
     line-height: 1.5;
     color: #000000;
   }
