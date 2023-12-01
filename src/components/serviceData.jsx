@@ -8,7 +8,7 @@ export const serviceData =  {
         image: headerservice,
         information: [
             {
-                title: 'LO ACOMPAÑAMOS EN TODAS \n'+
+                title: 'LO ACOMPAÑAMOS EN TODAS '+
                        'LAS ETAPAS DE SU PROYECTO',
                 subtitle: 'Desde el diseño hasta la construcción de auditorios, teatros, iglesias, ' +
                           'salones de conferencias y departamentos de producción; así como en ' +
