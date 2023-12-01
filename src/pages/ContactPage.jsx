@@ -101,46 +101,46 @@ const ContactPage = () => {
     <>
       <Header />
       <main className={style.mainStyle}>
-      <h1 className={style.h1}>
-       <span className={style.color1}>Agenda una asesoria personalizada con nuestros expertos para darte una mejor <br/> respuesta a las necesidades de tu proyecto. </span> 
-       <span className={style.color2}>Por favor llena el formulario que se encuentra <br/> a continuación:</span>
-      </h1>
-      <form className={style.formStyle} onSubmit={handleSubmit}>
-      {formFields.map((field, index) => (
-      <div key={index} className={field.type === 'select' ? style.row : null}>
-        <label htmlFor={field.name}>
-          {field.label}
-          {field.type === 'tel' ? (
-            <input 
-              ref={phoneInput} 
-              type="tel" 
-              id={field.name}
-              name={field.name}
-              autoComplete="tel"
-            />
-          ) : field.type === 'textarea' ? (
-            <textarea
-              id={field.name}
-              name={field.name}
-              value={formData[field.name]}
-              onChange={handleInputChange}
-              autoComplete="on"
-            />
-          ) : (
-            <input
-              id={field.name}
-              type={field.type}
-              name={field.name}
-              value={formData[field.name]}
-              onChange={handleInputChange}
-              autoComplete="on"
-            />
-          )}
-        </label>
-      </div>
-))}
-        <button className= {style.button}type="submit">Enviar</button>
-      </form>
+        <h1 className={style.h1}>
+        <span className={style.color1}>Agenda una asesoria personalizada con nuestros expertos para darte una mejor <br/> respuesta a las necesidades de tu proyecto. </span> 
+        <span className={style.color2}>Por favor llena el formulario que se <br /> encuentra a continuación:</span>
+        </h1>
+        <form className={style.formStyle} onSubmit={handleSubmit}>
+          {formFields.map((field, index) => (
+            <div key={index} className={field.type === 'select' ? style.row : null}>
+              <label htmlFor={field.name}>
+                {field.label}
+                {field.type === 'tel' ? (
+                  <input 
+                    ref={phoneInput} 
+                    type="tel" 
+                    id={field.name}
+                    name={field.name}
+                    autoComplete="tel"
+                  />
+                ) : field.type === 'textarea' ? (
+                  <textarea
+                    id={field.name}
+                    name={field.name}
+                    value={formData[field.name]}
+                    onChange={handleInputChange}
+                    autoComplete="on"
+                  />
+                ) : (
+                  <input
+                    id={field.name}
+                    type={field.type}
+                    name={field.name}
+                    value={formData[field.name]}
+                    onChange={handleInputChange}
+                    autoComplete="on"
+                  />
+                )}
+              </label>
+            </div>
+          ))}
+            <button className= {style.button}type="submit">Enviar</button>
+          </form>
     </main>
       <Footer />
       <WhatsAppButton />

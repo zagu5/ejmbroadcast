@@ -90,13 +90,15 @@
       }
 
       .button {
+        display: flex;
+        justify-content: center;
         background: #e98f2d; 
         padding: 10px 30px;
+        margin: 0 auto;
         cursor: pointer;
         border-radius: 50px;
         transition: background-color 0.3s;
         margin-bottom: 20px;
-        display: block;
         margin-top: 30px;
         font-size: 43.942px;
         font-family: 'AvertaStd-Extrabold';
