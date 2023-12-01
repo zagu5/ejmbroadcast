@@ -109,7 +109,7 @@ export const equipmentData = {
     },
     software: {
         image: headerSoftware,
-        title: 'SOTWARE E INTERFACES',
+        title: 'SOFTWARE E INTERFACES',
         icon: softwareIcon,
         text: 'MARCAS ALIADAS',
         brands: [

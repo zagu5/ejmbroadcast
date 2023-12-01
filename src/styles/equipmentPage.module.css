@@ -1,54 +1,69 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-
     margin-bottom: 20px;
     background-color: #EAEAEA;
   }
 
   .imageContainer {
     position: relative;
-    width: 100%; /* Asegura que el contenedor de la imagen no sea más grande que su contenedor padre */
-    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor de la imagen */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
+    width: 100%; 
+    overflow: hidden;
   }
   
   .imageContainer img {
-    max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    width: 100%; 
+    height: auto; 
   }
+
   .titleIcon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    font-family: 'AvertaStd-Black',Helvetica,Arial,Lucida,sans-serif;
     align-items: center;
     gap: 10px;
   }
 
-  .titleIcon img{
-    width: 8rem;
-    height: 8rem;
+  .titleIcon h1 {
+    font-family: 'AvertaStd-ExtraBold';
+    font-size: 80px;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    white-space: nowrap;
+    margin-right: 20px;
   }
 
+  .titleIcon img{
+    width: 190px;
+    height: 127.1px;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+
+  .container2{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 90%;
+  }
+
+
   .text p {
-    font-size: 35px;
+    font-size: 51.707px;
     color: #05526D;
-    text-align: keft;
+    text-align: left;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-family: 'avertaStd-ExtraBold';
+    font-family: 'AvertaStd-ExtraBold';
   }
 
   .brandsgrid {
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 50px;
   }
   
   .brandsgrid div {
@@ -56,22 +71,13 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    width: 296.9px;
+    height: 233px;
+    flex-shrink: 0;
+
   }
   
-  /* .brandsgrid div img {
-    width: 100%;
-    height: auto;
-  } */
-  
-  /* .brandsgrid div .card-title {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-  } */
 
   .card-body {
     width: 100%;
@@ -92,6 +98,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 20px; /* Ajusta este valor según tus necesidades */
+    width: 20px; 
     height: auto;
   }
