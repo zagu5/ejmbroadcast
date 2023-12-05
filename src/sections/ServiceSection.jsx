@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     image: fondoclaro,
-    title: "ASESORIA EN DISEÑO Y CONSTRUCCIÓN",
+    title: "ASESORÍA EN DISEÑO Y CONSTRUCCIÓN",
     serviceId: "/asesoria",
   },
   {

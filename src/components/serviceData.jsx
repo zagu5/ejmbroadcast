@@ -4,7 +4,7 @@ import foto from '../assets/images/services/Foto.png';
 export const serviceData =  {
     'asesoria': {
         id:'1',
-        title: 'ASESORIA EN DISEÑO Y CONSTRUCCIÓN',
+        title: 'ASESORÍA EN DISEÑO Y CONSTRUCCIÓN',
         image: headerservice,
         information: [
             {

@@ -26,7 +26,7 @@ const MyCarousel = () => {
           <div className="text-reverse">
             <div className="container-fluid">
               <h2>Bienvenido a <br/> EJM Broadcast</h2>
-              <p>Un equipo de profesionales audiovisuales <br/>  que provee soluciones, asesoria y buenos<br/>precios para el mundo del Broadcast</p>
+              <p>Un equipo de profesionales audiovisuales <br/>  que provee soluciones, asesoría y buenos<br/>precios para el mundo del Broadcast</p>
               <Link to='/contact-form'><button id="contact" type='button' className='btn' style={{color:'white'}} >Conéctate con nosotros</button></Link>
             </div>
           </div>

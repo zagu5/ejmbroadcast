@@ -61,7 +61,7 @@ const AboutPage = () => {
             <div className={style.newContainer3}>
                 <img src={foto2} alt="foto camaras"  className={style.image2}/>
                 <div className={style.textContainer3}>
-                    <h2 className={style.subtitle2}>SIEMPRE A <br />LA VANGUARDIA <br /> DE LA TECNOLOGIA</h2>
+                    <h2 className={style.subtitle2}>SIEMPRE A <br />LA VANGUARDIA <br /> DE LA TECNOLOGÍA</h2>
                     <p className={style.paragraph3}>Nos hemos vinculado a importantes procesos de capacitación, inspección y valoración de todos nuestros proveedores en soluciones de acústica, audio, iluminación, proyección y video profesional. Durante varios años hemos estado participando de las ferias más grandes del mundo de la iluminación, el audio y el video, extendiendo nuestro conocimiento al ritmo de la tecnología actual y la orientación hacia la que se dirige la industria. </p>
                 </div>
                 
