@@ -4,7 +4,7 @@
   padding: 2rem;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:ital,wght@1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:ital,wght@1,900&display=swap');
 
 @font-face {
   font-family: 'Averta-Regular';
@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'AvertaStd-Extrabold';
   src: url(   '../src/assets/fonts/AvertaStd-ExtraBold.ttf')format('woff');
-}
+} */
 body{
   background-color: #ffffff;
   font-family: 'Averta-Regular','AvertaStd-Extrabold';
