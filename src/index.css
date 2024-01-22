@@ -3,14 +3,12 @@
 
 @font-face {
   font-family: 'Averta-Regular';
-  src: url('./assets/fonts/Averta-Regular.ttf') format('woff2'),
-       url('./assets/fonts/Averta-Regular.ttf') format('woff');
+  src: url('./assets/fonts/Averta-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'AvertaStd-Extrabold';
-  src: url('./assets/fonts/AvertaStd-ExtraBold.ttf') format('woff2'),
-       url('./assets/fonts/AvertaStd-ExtraBold.ttf') format('woff');
+  src: url('./assets/fonts/AvertaStd-ExtraBold.ttf') format('truetype');
   font-weight: 400;
 }
 :root {   
