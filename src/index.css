@@ -1,4 +1,4 @@
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:ital,wght@1,900&display=swap');
 
 @font-face {
@@ -10,13 +10,13 @@
   font-family: 'AvertaStd-Extrabold';
   src: url('./assets/fonts/AvertaStd-ExtraBold.ttf') format('truetype');
   font-weight: 400;
-}
+} */
 :root {   
   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
-  
+    font-family: "Inter", sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
