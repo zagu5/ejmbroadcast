@@ -1,5 +1,3 @@
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:ital,wght@1,900&display=swap');
 
 @font-face {
   font-family: 'Averta-Regular';
@@ -10,7 +8,7 @@
   font-family: 'AvertaStd-Extrabold';
   src: url('./assets/fonts/AvertaStd-ExtraBold.ttf') format('truetype');
   font-weight: 400;
-} */
+} 
 :root {   
   
     color-scheme: light dark;
