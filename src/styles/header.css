@@ -1,6 +1,3 @@
-/* #content-container {
-  padding-bottom: 100vh; 
-} */
 .header {
     background-color: rgba(0, 0, 0, 0.5); 
     color: #fff; 
@@ -18,8 +15,8 @@
 
 /* Estilo para el logo */
 .header img {
-  height: 77,4055 px;
-  width: 264,5321 px;
+  height: 77.4055px;
+  width: 264.5321px;
   position:absolute;
   display:flex; 
   align-items:center; 
@@ -31,7 +28,6 @@
 
   /* Estilo para los elementos del menú */
   .header ul {
-    font-family: 'Averta-Regular';
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -102,7 +98,6 @@
   margin: 5px 10px;
   font-size: 12px;
   border-bottom: 1px solid #555; 
-  /* text-decoration:underline; */
 }
 
 .dropdown-menu li::after {
@@ -138,4 +133,35 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+.header {
+  padding: 14px 10px;
+}
+.header img {
+  height: 40px; 
+  width: 130px;
+}
+.header ul {
+  font-size: 16px; 
+  margin-right: 70px;
+}
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+.header {
+  padding: 7px 5px; 
+}
+.header img {
+  height: 20px; 
+  width: 65px;
+}
+.header ul {
+  font-size: 12px; 
+  margin-right: 35px;
+}
 }

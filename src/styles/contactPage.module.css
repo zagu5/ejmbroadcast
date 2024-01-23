@@ -15,7 +15,6 @@ main {
   color: black;
   text-align: center; 
   font-size: 29.975px;
-  font-family: 'AvertaStd-ExtraBold';
   text-align: justify;
   justify-content: center; 
 
@@ -39,7 +38,6 @@ main {
   text-align: left;
   z-index: 2;
   font-size: 29.975px;
-  font-family: 'AvertaStd-ExtraBold';
 }
 
 /* Estilos para los campos del formulario */
@@ -66,7 +64,7 @@ select {
   color: #333;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: Arial, Helvetica, sans-serif;
+
   font-size: 20px;
 }
 
@@ -90,7 +88,6 @@ textarea {
   cursor: pointer;
   margin-top: 10px;
   font-size: 40.809px;
-  font-family: 'AvertaStd-ExtraBold';
   margin: 0 auto;
 }
 

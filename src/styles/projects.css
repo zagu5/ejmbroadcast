@@ -4,7 +4,6 @@
     grid-template-rows: 240px 240px;
     gap: .6px;
     margin-top: 30px;
-    /* min-height: 100vh; */
 }
 
 .grid-item{
@@ -31,7 +30,6 @@
 .title {
   color: #fff; 
   font-size: 31px; 
-  font-family: 'Averta-Regular';
   font-weight: 400;
   margin-top: 20px; 
   margin: 20px 20px 0;
@@ -39,13 +37,12 @@
 }
 
 .text {
-  padding: 60px 0; /* Ajusta el valor 20px según sea necesario */
+  padding: 60px 0; 
 }
 
 .text h3 {
   color: #e98f2d; 
   font-size: 49.891px; 
-  font-family: 'AvertaStd-Extrabold';
   font-weight: 400;
   margin-bottom: 20px; 
   line-height: 1;
@@ -55,10 +52,7 @@
 .text p {
   color: #000000; 
   font-size: 29px; 
-  font-family: 'AvertaStd-Extrabold';
   font-weight: 400;
-  /* margin-bottom: 20px;  */
-  /* margin: 20px 20px 0; */
   text-align: center;
 }
 

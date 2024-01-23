@@ -61,8 +61,8 @@ const MyCarousel = () => {
         <div className="vcenter">
           <div className="text">
             <div className="container-fluid">
-              <p style={{ fontSize: '56.79px', fontFamily: 'Averta-Regular', color: '#fff', textAlign:'start', marginLeft:'40px', marginTop: '-5em'}}>Algunas de</p>
-              <h2 style={{fontSize: '96.89px', color: '#e98f2d', marginLeft:'40px'}}>Nuestras Marcas</h2>
+            <p className="text-large">Algunas de</p>
+            <h2 className="text-huge">Nuestras Marcas</h2>
             </div>
           </div>
         </div>

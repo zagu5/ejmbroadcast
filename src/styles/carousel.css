@@ -37,7 +37,6 @@
 }
 
 h2 {
-  font-family: 'AvertaStd-Extrabold';
   color: #fff;
   font-size: 96.89px;
   line-height: 0.9em;
@@ -53,7 +52,6 @@ h2 {
 }
 
 p {
-  font-family: 'AvertaStd-Extrabold';
   color: #fff;
   font-size: 40px;
   line-height: 1.5em;
@@ -68,7 +66,6 @@ p {
 }
 
 .btn {
-  font-family: 'Averta-Regular';
   background: transparent;
   border: 2px solid #fff;
   border-radius: 40px;
@@ -87,6 +84,20 @@ p {
 
 .btn:hover {
   background-color: transparent;
+}
+
+.text .text-large {
+  font-size: 56.79px;
+  color: #fff;
+  text-align: start;
+  margin-left: 40px;
+  margin-top: -5em;
+}
+
+.text-huge {
+  font-size: 96.89px;
+  color: #e98f2d;
+  margin-left: 40px;
 }
 
 /* Estilos para la lista de imágenes */
@@ -114,4 +125,73 @@ p {
 .logos img {
   max-width: 100%;
   height: auto;
+}
+
+/* CSS existente */
+/* ... */
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  .carousel-container {
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .btn {
+    margin-left: 4em;
+    font-size: 16px;
+  }
+
+  .text-large {
+    font-size: 40px;
+  }
+
+  .text-huge {
+    font-size: 70px;
+  }
+
+  .logos li {
+    width: 50%;
+    flex-basis: calc(20% - 10px);
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .carousel-container {
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin-left: 2em;
+    font-size: 14px;
+  }
+
+  .text-large {
+    font-size: 30px;
+  }
+
+  .text-huge {
+    font-size: 50px;
+  }
+
+  .logos li {
+    width: 100%;
+    flex-basis: calc(40% - 10px);
+  }
 }

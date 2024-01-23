@@ -25,7 +25,6 @@
   }
 
   .title {
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 74px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -37,7 +36,6 @@
     line-height: 1.5;
     position: relative;
     font-size: 22.59px;
-    font-family: 'AvertaStd-ExtraBold';
   }
 
   .myClass::after {
@@ -72,7 +70,6 @@
   }
 
   .subtitle {
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 74px;
     font-weight: 400;
     text-align: left; 
@@ -89,7 +86,6 @@
   }
 
   .text{
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 22.59px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -120,7 +116,6 @@
   
 
   .newTitle {
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 40px;
     font-weight: 400;
     text-align: center; 
@@ -130,14 +125,12 @@
   }
 
   .newParagraph {
-    font-family: 'AvertaStd-ExtraBold';
     width: 70%;
     padding: 20px;
     margin: 20px 0;
   }
 
   .paragraph{
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 22.59px;
     text-align: center;
     margin: 0 40px;
@@ -149,7 +142,7 @@
   .iconContainer {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Aumenta el margen superior */
+    margin-top: 40px; 
   }
   
   .icon {
@@ -168,7 +161,6 @@
       left: 10%;
       text-align: justify;
       transform: translateY(-50%);
-      font-family: 'AvertaStd-ExtraBold';
       font-size: 44.89px;
       line-height: 1; 
       font-weight: 400;
@@ -202,7 +194,6 @@
 
   .title1 {
     font-size: 74px;
-    font-family: 'AvertaStd-ExtraBold';
     font-weight: 400;
     text-align: left; 
     color: #05526D;
@@ -272,7 +263,6 @@
   .subtitle2 {
     font-size: 74px;
     font-weight: 700;
-    font-family: 'AvertaStd-ExtraBold';
     text-align: left; 
     color: #e98f2d;
     margin: 0 40px;
@@ -285,7 +275,6 @@
     text-align: justify;
     margin: 0 40px;
     font-weight: 400; 
-    font-family: 'AvertaStd-ExtraBold';
     line-height: 1.5;
     color: #000000;
   }

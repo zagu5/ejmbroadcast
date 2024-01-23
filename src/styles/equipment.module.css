@@ -8,7 +8,6 @@
   }
   
   .title {
-    font-family: 'AvertaStd-Extrabold';
     font-size: 67.487px;
     color: #005C9A; 
     text-align: center;
@@ -16,7 +15,6 @@
   }
   
   .subtitle {
-    font-family: 'AvertaStd-Extrabold';
     font-size: 22.59px;
     color: #005C9A; 
     text-align: center;
@@ -39,7 +37,6 @@
   }
   
   .iconContainer p {
-    font-family: 'AvertaStd-Extrabold';
     font-size:  49.891px;
     margin-top: 10px;
     color: #000000;
@@ -47,7 +44,6 @@
   }
   
   .text2 {
-    font-family: 'AvertaStd-ExtraBold';
     color: #000000;
     font-size: 22.592px;
     text-align: center;

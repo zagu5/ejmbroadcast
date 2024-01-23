@@ -70,13 +70,11 @@
   }
 
   .contactForm label{
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 29.997px;
   }
 
   .formTitle {
     font-size: 59.3823px;
-    font-family: 'AvertaStd-ExtraBold';
     line-height: 1;
     margin-bottom: 10px;
   }
@@ -142,7 +140,6 @@
   }
   
   .text1 {
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 29.997;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -150,16 +147,15 @@
   }
   
   .text2 p {
-    font-family: 'AvertaStd-ExtraBold';
     font-size: 29.997;
     line-height: 1;
   }
 
   hr {
     border-color: #E98F2D;
-    border-width: 2px; /* Ajusta este valor para cambiar el grosor de la línea */
-    width: 40%; /* Ajusta este valor para cambiar el ancho de la línea */
-    align-self: flex-start; /* Alinea la línea al inicio del contenedor */
+    border-width: 2px;
+    width: 40%; 
+    align-self: flex-start; 
     margin-left: 140px;
     margin-top: -90px; 
   }
