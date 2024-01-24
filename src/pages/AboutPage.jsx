@@ -7,7 +7,7 @@ import iconok from '../assets/images/about/iconok.svg'
 import banner2 from '../assets/images/about/Banner_2.png'
 import foto1 from '../assets/images/about/foto_1.png'
 import foto2 from '../assets/images/about/foto_2.png'
-import logosEmpresas from '../assets/images/about/logosEmpresas.png'
+// import logosEmpresas from '../assets/images/about/logosEmpresas.png'
 import Footer from '../components/Footer'
 import WhatsAppButton from "../components/WhatsAppButton";
 
@@ -50,9 +50,9 @@ const AboutPage = () => {
                     <p className={style.paragraph1}>Nuestro equipo de profesionales son especialistas preparados y <br /> dispuestos a ofrecer asesoría y capacitación en el uso de recursos para <br /> Media Broadcast; su experiencia la ha adquirido trabajando y <br />asesorando a grandes empresas de entretenimiento: Walt Disney, <br /> ABC, CNN, MIRATV, HOLA TV, RCN TV. </p>
                 </div>
                 <img  className= {style.image1}src={foto1} alt="foto1" />
-                <div className={style.logosEmpresas}>
+                {/* <div className={style.logosEmpresas}>
                     <img src={logosEmpresas} alt="logos empresas" />
-                </div>
+                </div> */}
             </div>
             <div className={style.containerBanner}>
                 <p className={style.paragraph2}>Nuestro principal objetivo es que usted se sienta seguro con sus decisiones de compra, por eso nosotros le ayudaremos a crear soluciones a otro nivel. </p>

@@ -151,15 +151,6 @@
     line-height: 1;
   }
 
-  hr {
-    border-color: #E98F2D;
-    border-width: 2px;
-    width: 40%; 
-    align-self: flex-start; 
-    margin-left: 140px;
-    margin-top: -90px; 
-  }
-
   @media (max-width: 768px) {
     .footer {
       flex-direction: column;
