@@ -75,11 +75,11 @@ const Header = () => {
   
 
   return (
-    <header  className={`header ${visible ? '' : 'hidden'}`}>
-      <nav>
+    <header  className={`header ${visible ? '' : 'hidden'}`}>      
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
+        <nav>
         <ul>
           <li>
             <RouterLink to="/">

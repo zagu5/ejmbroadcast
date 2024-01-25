@@ -79,9 +79,10 @@
     margin-bottom: 10px;
   }
   
-  .dataInfo{
+  .dataInfo p{
     line-height: 1.5;
     margin-bottom: 50px;
+    font-size: 35px;
   }
   .contactColumn {
     display: flex;

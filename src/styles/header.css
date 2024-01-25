@@ -1,11 +1,12 @@
 .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5); 
     color: #fff; 
-    padding: 28px 20px; 
+    padding: 20px 0;
     position: fixed; 
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 100;
   }
 
@@ -15,14 +16,15 @@
 
 /* Estilo para el logo */
 .header img {
-  height: 77.4055px;
-  width: 264.5321px;
-  position:absolute;
+  width: 200px;
+  position: relative;
+  left: 40px;
+  /* position:absolute;
   display:flex; 
   align-items:center; 
   margin-right: 20px; 
   top: 12px;
-  left:6em;
+  left:6em; */
 }
 
 
@@ -37,7 +39,7 @@
     cursor: pointer;
     font-size: 31.298px;
     font-weight: 400;
-    margin-right: 140px;
+    margin: 0 0 0 15px;
   }
   
   .header li {
@@ -135,33 +137,3 @@
   transform: translate(-50%, -50%);
 }
 
-
-/* Estilos para pantallas medianas */
-@media (max-width: 768px) {
-.header {
-  padding: 14px 10px;
-}
-.header img {
-  height: 40px; 
-  width: 130px;
-}
-.header ul {
-  font-size: 16px; 
-  margin-right: 70px;
-}
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 480px) {
-.header {
-  padding: 7px 5px; 
-}
-.header img {
-  height: 20px; 
-  width: 65px;
-}
-.header ul {
-  font-size: 12px; 
-  margin-right: 35px;
-}
-}
